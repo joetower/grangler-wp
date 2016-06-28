@@ -1,0 +1,15 @@
+//////////////////////////////
+// Layouts
+// @_layouts.scss
+//////////////////////////////
+
+@import "html";
+@import "header";
+@import "main-menu";
+@import "footer";
+@import "posts";
+@import "comments-area";
+@import "content-bottom-widgets";
+
+// panels
+@import "two-column";

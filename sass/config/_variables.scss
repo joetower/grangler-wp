@@ -1,0 +1,132 @@
+//////////////////////////////
+// Variables
+// @_variables.scss
+//////////////////////////////
+
+//
+// Typography
+//
+$sans: 'Open Sans', Arial, sans-serif; // 400, 700, 800
+$sans-condensed: 'Open Sans Condensed', Arial, sans-serif; // 800
+
+$sans-regular: 400;
+$sans-semi-bold: 600;
+$sans-bold: 700;
+$sans-bolder: 800;
+
+$base-font-size:62.5%;
+
+/////////
+// Colors
+
+// Primary
+
+$blue: #51C6D8;
+$blue-lightest: #DAF6FB;
+$blue-lighter: #99E8F4;
+$blue-light: #5ADAEE;
+$blue-mid-dark: #1998AB;
+$blue-dark: #126D7A;
+
+$yellow: #F3E442;
+$yellow-lightest: #FCFADD;
+$yellow-light: #F6EC7D;
+$yellow-mid-dark: #E0D23C;
+$yellow-dark: #CEBD0D;
+
+// Secondary
+// @TODO: TBD
+
+$red: #BF0B0B;
+$red-dark: #6A0606;
+
+$pink: #E9003E;
+$pink-dark: #B3003E;
+
+$green: #3EBF0B;
+$green-dark: #226A06;
+
+// Grays and Neutrals
+$gray: #4A4A4A;
+$gray-light: #CCCCCC;
+$gray-lighter: #E0E0E0;
+$gray-lightest: #F4F4F4;
+$gray-mid:#8E8E8E;
+$gray-mid-dark:#606060;
+$gray-dark: #333333;
+
+$white: #FFFFFF;
+$black: #000;
+
+
+$link: $blue-mid-dark;
+$link-highlight: $blue-lighter;
+
+// Defaults for asseccibility contrast
+$dark-text-default: $black !default;
+$light-text-default: #FFFFFF !default;
+
+/////////
+// Singularity variables
+//
+@include breakpoint-set('to ems', true);
+@include add-grid(16);
+@include add-gutter(1/3);
+
+
+/// Widths and base sizing
+$base-font-size: 62.5%; // setup to work with rems
+$border-width: 6px;
+
+$max-width: 720px;
+$text-max-width: 680px;
+
+$max-width-image-paragraph: 860px;
+
+$teaser-width: 350px;
+$callout-width: 400px;
+
+$max-image-width: 450px;
+$max-image-width-small: 300px;
+
+$image-full-embed: 100%;
+$image-half-embed: 55%;
+
+$grid-width: 1050px;
+$grid-width-large: 1220px;
+
+/////////
+// Spacing
+//
+$space: 30px;
+
+// times
+$space-double: $space*2;
+$space-triple: $space*3;
+$space-quadruple: $space*4;
+$space-quintuple: $space*5;
+$space-sextuple: $space*6;
+$space-septuple: $space*7;
+
+// divided
+$space-one-half: $space/2;
+$space-one-third: $space/3;
+$space-one-fourth: $space/4;
+$space-one-fifth: $space/5;
+$space-one-sixth: $space/6;
+$space-one-seventh: $space/7;
+$space-one-eighth: $space/8;
+
+/////////
+// Breakpoints
+//
+
+$small:380px;
+$smaller:475px;
+$small-medium:560px;
+$medium:768px;
+$medium-large:855px;
+$large:1024px;
+$x-large:1260px;
+
+$small-menu:0px;

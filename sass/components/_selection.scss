@@ -1,0 +1,14 @@
+//////////////////////////////
+// selection
+// @_selection.scss
+//////////////////////////////
+
+::-moz-selection {
+  background-color: $yellow;
+  color: $gray-dark;
+}
+
+::selection {
+  background-color: $yellow;
+  color: $gray-dark;
+}

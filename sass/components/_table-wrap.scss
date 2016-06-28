@@ -1,0 +1,10 @@
+//////////////////////////////
+// table-wrap
+// @_table-wrap.scss
+//////////////////////////////
+
+.table-wrap {
+  max-width: $grid-width;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}

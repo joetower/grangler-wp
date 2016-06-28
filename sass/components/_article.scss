@@ -1,0 +1,15 @@
+//////////////////////////////
+// article
+// @_article.scss
+//////////////////////////////
+
+article {
+  position: relative;
+
+  p {
+    max-width:$text-max-width;
+    .button {
+      margin-top: $space-one-half;
+    }
+  }
+}

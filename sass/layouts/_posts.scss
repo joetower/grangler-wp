@@ -1,0 +1,64 @@
+//////////////////////////////
+// posts
+// @_posts.scss
+//////////////////////////////
+
+.post {
+  .post-thumbnail {
+    margin: 0 auto $space;
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+
+  &.type-post {
+    .entry-footer {
+      @include breakpoint($small-medium) {
+        @include grid-span(4,1);
+      }
+    }
+    .entry-content,
+    .entry-header {
+      @include breakpoint($small-medium) {
+        @include grid-span(12,5);
+      }
+    }
+    .entry-header,
+    .entry-content,
+    .entry-footer{
+      @extend %wrapper;
+    }
+    .entry-header {
+      margin-bottom: $space;
+    }
+    .album-entries {
+      margin: 0;
+      padding: 0;
+      li {
+        list-style: none;
+        padding: $space-one-half 0;
+        + li {
+          margin-top: $space;
+          border-top: $border-width solid $gray-lightest;
+        }
+
+        .top-section {
+          @include clearfix();
+
+          margin-bottom: $space-one-half;
+        }
+      }
+      .position {
+        @include font-size(2.8);
+        color: $green;
+        font-weight: $sans-bolder;
+      }
+      figure {
+        max-width: $max-image-width-small;
+        float: left;
+        margin-right: $space-one-half;
+      }
+    }
+  }
+}

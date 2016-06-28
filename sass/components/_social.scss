@@ -1,0 +1,26 @@
+//////////////////////////////
+// Social
+// @_social.scss
+//////////////////////////////
+
+.social {
+  margin-bottom: $space-one-half;
+  
+  .block-region-social {
+    background-color: $gray-lightest;
+    padding: $space-one-half;
+    @include breakpoint($medium) {
+      display: inline-block;
+    }
+    h2 {
+      @include font-size(1.4);
+      display: inline-block;
+      margin: 0;
+      font-weight: $sans-regular;
+      vertical-align: middle;
+    }
+    .sharethis-wrapper {
+      display: inline-block;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+//////////////////////////////
+// figcaption
+// @_figcaption.scss
+//////////////////////////////
+
+.caption > figcaption {
+  display: block;
+}
+
+figcaption {
+  @include clearfix();
+  display: block;
+  border-top: $border-width solid $gray;
+  padding: $space-one-third $space-one-half;
+  background-color: $gray-lightest;
+
+  cite {
+    font-weight: $sans-bold;
+  }
+  span {
+    display: block;
+
+    &.credit {
+      padding-top: $space-one-sixth;
+    }
+    &.source,
+    &.copyright {
+      display: inline-block;
+      padding-top: $space-one-sixth;
+    }
+    &.source + .copyright {
+      &:before {
+        content: "/";
+      }
+    }
+  }
+}

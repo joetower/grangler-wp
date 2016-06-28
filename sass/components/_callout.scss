@@ -1,0 +1,94 @@
+//////////////////////////////
+// callout
+// @_callout.scss
+//////////////////////////////
+
+.callout {
+  background-color: $gray-lightest;
+  color: $black;
+  font-weight: $sans-bold;
+
+  @include breakpoint($small-medium) {
+    max-width: $callout-width;
+  }
+  @include breakpoint($large) {
+    max-width:100%;
+  }
+  figure img {
+    width: 100%;
+  }
+  .callout-content {
+    padding: $space-one-half;
+    border-top: $border-width solid $gray-lighter;
+
+    @include breakpoint($large) {
+      padding: $space;
+    }
+  }
+
+  &.dark,
+  &.default {
+    background-color: $gray-dark;
+    padding: 0;
+    color: $white;
+    border: 0;
+    .callout-content {
+      border-top: $border-width solid $blue-light;
+    }
+    h2 {
+      color: $white;
+      font-weight: $sans-bolder;
+    }
+    .field--name-field-link {
+      a {
+        @extend %btn-tertiary;
+      }
+    }
+  }
+  &.primary {
+    background-color: $yellow-light;
+    padding: 0;
+    color: $gray-dark;
+    border: 0;
+    .callout-content {
+      border-top: $border-width solid $yellow;
+    }
+    h2 {
+      color: $gray-dark;
+      font-weight: $sans-bolder;
+    }
+    .field--name-field-link {
+      a {
+        @extend %btn-tertiary;
+      }
+    }
+  }
+  &.secondary {
+    background-color: $blue-light;
+    padding: 0;
+    color: $gray-dark;
+    border: 0;
+    .callout-content {
+      border-top: $border-width solid $blue-mid-dark;
+    }
+    h2 {
+      color: $gray-dark;
+      font-weight: $sans-bolder;
+    }
+    .field--name-field-link {
+      a {
+        @extend %btn-tertiary;
+      }
+    }
+  }
+
+  h2 {
+    margin-bottom: $space-one-half;
+  }
+  p {
+    margin-bottom: $space;
+  }
+  + .callout {
+    margin-top: $space;
+  }
+}

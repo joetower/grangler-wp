@@ -1,0 +1,12 @@
+//////////////////////////////
+// comments-area
+// @_comments-area.scss
+//////////////////////////////
+
+.comments-area {
+  @extend %wrapper;
+  @include clearfix();
+  padding: $space;
+  margin-top: $space;
+  clear: both;
+}

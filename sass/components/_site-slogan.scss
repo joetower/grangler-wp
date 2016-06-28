@@ -1,0 +1,12 @@
+//////////////////////////////
+// Site Slogan
+// @_site-slogan.scss
+//////////////////////////////
+
+.site-slogan {
+  color:$gray;
+
+  footer & {
+    color: $white;
+  }
+}

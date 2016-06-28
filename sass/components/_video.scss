@@ -1,0 +1,12 @@
+//////////////////////////////
+// video
+// @_video.scss
+//////////////////////////////
+
+.video {
+  margin-bottom: $space;
+
+  .video-wrap {
+    @include intrinsic-ratio(16 9);
+  }
+}

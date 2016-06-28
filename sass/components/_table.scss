@@ -1,0 +1,41 @@
+//////////////////////////////
+// table
+// @_table.scss
+//////////////////////////////
+
+table {
+  margin: 25px 0;
+  border-collapse: collapse;
+  border: 1px solid $gray-lighter;
+  border-bottom: 2px solid $gray-light;
+
+  tr {
+     &:hover {
+      background: $gray-lightest;
+
+      td {
+        color: $gray-dark;
+      }
+    }
+  }
+  th, td {
+    color: $gray-mid;
+    border: 1px solid $gray-lighter;
+    border-collapse: collapse;
+    padding: $space-one-fourth $space-one-half;
+
+    @include breakpoint($large) {
+      padding: $space-one-half $space;
+    }
+  }
+  th {
+    background: $black;
+    color: $white;
+    text-transform: uppercase;
+    font-size: 14px;
+
+    &.last {
+      border-right: none;
+    }
+  }
+}

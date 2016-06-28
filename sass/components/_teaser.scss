@@ -1,0 +1,61 @@
+//////////////////////////////
+// teaser
+// @_teaser.scss
+//////////////////////////////
+
+article.teaser,
+article.enhanced_teaser {
+  figure {
+    a {
+      display: block;
+      &:hover {
+        filter: saturate(0%);
+        opacity: .70;
+      }
+    }
+  }
+  .node-content,
+  .node__content {
+    margin: 0;
+    padding: $space-one-half;
+  }
+
+  &.article,
+  &.node--type-article {
+    .node-content,
+    .node__content {
+      background-color: $gray-lightest;
+      border-top: $border-width solid $blue-dark;
+    }
+  }
+  &.blog,
+  &.node--type-blog {
+    .node-content,
+    .node__content {
+      background-color: $gray-lightest;
+      border-top: $border-width solid $blue-dark;
+    }
+
+  }
+
+  &.show {
+    .node-content {
+      background-color: $yellow;
+      color: $black;
+    }
+    span {
+      @include font-size(1.4);
+      font-weight: $sans-bold;
+    }
+    h2 a {
+      color: $black;
+      &:hover {
+        color: $gray;
+      }
+    }
+
+    p {
+      margin-bottom: $space-one-half;
+    }
+  }
+}
