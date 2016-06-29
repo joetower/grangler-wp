@@ -7,15 +7,12 @@ footer {
 
   &.site-footer {
     padding:$space-double $space;
-    margin-top: $space-double;
     background-color: $gray;
     color: $white;
   }
-
-  .logo {
-    @include breakpoint($large) {
-      margin-left: -80px;
-    }
+  .site-info {
+    @extend %wrapper;
+    width: 100%;
   }
   .site-slogan {
     @include breakpoint($medium) {

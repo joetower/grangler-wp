@@ -19,12 +19,24 @@
   @include breakpoint($large) {
     @include justify-content(space-between);
   }
+
   .widget-area {
     @include clearfix();
+    @include flex(0 1 50%);
 
-    padding: $space;
-    @include breakpoint ($small-medium) {
-      @include flex(0 1 50%);
+    section {
+      padding: $space;
+      @include breakpoint ($small-medium) {
+        @include flex(0 1 50%);
+      }
+      &.widget_recent_entries {
+        background-color: $blue;
+        color: $white;
+      }
+      &.widget_categories {
+        background-color: $green;
+        color: $white;
+      }
     }
   }
 }

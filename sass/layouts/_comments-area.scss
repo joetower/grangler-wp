@@ -4,9 +4,15 @@
 //////////////////////////////
 
 .comments-area {
-  @extend %wrapper;
   @include clearfix();
-  padding: $space;
-  margin-top: $space;
   clear: both;
+  background-color: $yellow;
+
+  .comment-respond {
+    @extend %wrapper;
+    @include clearfix();
+    padding: $space;
+    margin-top: $space;
+    clear: both;
+  }
 }
