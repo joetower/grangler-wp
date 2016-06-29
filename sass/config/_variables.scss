@@ -21,18 +21,23 @@ $base-font-size:62.5%;
 
 // Primary
 
+
+$orange: #E06D06;
+
+$orange-muted: #A36E00;
+
+$yellow: #E3B23C;
+
+$brown: #433E0E;
+
+$cream: #DFD6A7;
+
 $blue: #3F88C5;
 $blue-lightest: #E3EEF6;
 $blue-lighter: #BCD5EA;
 $blue-light: #75AAD5;
 $blue-mid-dark: #3272A8;
 $blue-dark: #16324A;
-
-$yellow: #F3E442;
-$yellow-lightest: #FCFADD;
-$yellow-light: #F6EC7D;
-$yellow-mid-dark: #E0D23C;
-$yellow-dark: #CEBD0D;
 
 // Secondary
 // @TODO: TBD
@@ -58,8 +63,8 @@ $gray-dark: #26292B;
 $white: #FFFFFF;
 $black: #000;
 
-$link: $red;
-$link-highlight: $pink;
+$link: $green;
+$link-highlight: $blue;
 
 /////////
 // Singularity variables

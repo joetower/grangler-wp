@@ -13,7 +13,7 @@
   background-size: 32px;
   box-shadow: none;
   border-radius: 0;
-  
+
   &.error {
     color: $white;
     background-color: $red;
@@ -21,7 +21,7 @@
   }
   &.warning {
     background-color: $yellow;
-    border: $border-width solid $yellow-dark;
+    border: $border-width solid $orange-muted;
   }
   &.success,
   &.status {

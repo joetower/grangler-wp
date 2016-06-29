@@ -6,7 +6,7 @@
 .comments-area {
   @include clearfix();
   clear: both;
-  background-color: $yellow;
+  background-color: $cream;
 
   .comment-respond {
     @extend %wrapper;
