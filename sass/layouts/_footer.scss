@@ -12,6 +12,7 @@ footer {
     @include align-items(center);
     @include justify-content(space-around);
     @include align-content(flex-start);
+    clear: both;
   }
   .site-slogan {
     @include flex(1 auto);

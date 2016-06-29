@@ -13,15 +13,35 @@
   }
 
   &.type-post {
+    @include flexbox();
+    @include flex-wrap(wrap);
+    @include flex-direction(column);
+    @include justify-content(flex-start);
+    @include align-items(stretch);
+    @include align-content(flex-start);
+
+    @include breakpoint($small-medium) {
+      @include flex-direction(row);
+      @include align-items(center);
+      @include justify-content(space-between);
+      @include flex-wrap(wrap);
+
+    }
+
     .entry-footer {
+      @include flex(1 auto);
+      order:1;
+
       @include breakpoint($medium) {
-        @include grid-span(4,1);
+        @include flex(1 20%);
       }
     }
     .entry-content,
     .entry-header {
+      @include flex(1 auto);
+
       @include breakpoint($medium) {
-        @include grid-span(12,5);
+        @include flex(1 80%);
       }
     }
   }

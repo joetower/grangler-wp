@@ -7,7 +7,4 @@ body {
   @include flexbox();
   min-height: 100vh;
   flex-direction: column;
-  .outer-wrapper {
-    flex: 1;
-  }
 }

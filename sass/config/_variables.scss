@@ -21,12 +21,12 @@ $base-font-size:62.5%;
 
 // Primary
 
-$blue: #51C6D8;
-$blue-lightest: #DAF6FB;
-$blue-lighter: #99E8F4;
-$blue-light: #5ADAEE;
-$blue-mid-dark: #1998AB;
-$blue-dark: #126D7A;
+$blue: #3F88C5;
+$blue-lightest: #E3EEF6;
+$blue-lighter: #BCD5EA;
+$blue-light: #75AAD5;
+$blue-mid-dark: #3272A8;
+$blue-dark: #16324A;
 
 $yellow: #F3E442;
 $yellow-lightest: #FCFADD;
@@ -37,29 +37,29 @@ $yellow-dark: #CEBD0D;
 // Secondary
 // @TODO: TBD
 
-$red: #BF0B0B;
-$red-dark: #6A0606;
+$red: #E94F37;
+$red-dark: #9C2311;
 
-$pink: #E9003E;
-$pink-dark: #B3003E;
+$pink: #EE7D6B;
+$pink-dark: #EA5D47;
 
-$green: #3EBF0B;
-$green-dark: #226A06;
+$green: #44BBA4;
+$green-dark: #287062;
 
 // Grays and Neutrals
-$gray: #4A4A4A;
-$gray-light: #CCCCCC;
-$gray-lighter: #E0E0E0;
-$gray-lightest: #F4F4F4;
-$gray-mid:#8E8E8E;
-$gray-mid-dark:#606060;
-$gray-dark: #333333;
+$gray: #393E41;
+$gray-light: #D3D6D8;
+$gray-lighter: #C3C7CA;
+$gray-lightest: #F6F7EB;
+$gray-mid:#474D51;
+$gray-mid-dark:#2A2E30;
+$gray-dark: #26292B;
 
 $white: #FFFFFF;
 $black: #000;
 
-$link: $blue-mid-dark;
-$link-highlight: $blue-lighter;
+$link: $red;
+$link-highlight: $pink;
 
 /////////
 // Singularity variables
