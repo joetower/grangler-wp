@@ -1,0 +1,26 @@
+/**
+ * @file /components/_entry-footer.scss
+ * Entry footer parts
+ */
+
+.entry-footer {
+  .byline {
+    .author {
+      .photo {
+        clip-path: circle(25px at center);
+      }
+      a {
+        padding: 0 $space-one-third;
+      }
+    }
+  }
+  .posted-on {
+    display: inline-block;
+  }
+  .comments-link {
+    display: block;
+  }
+  .edit-link {
+    display: block;
+  }
+}

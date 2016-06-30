@@ -1,7 +1,7 @@
-//////////////////////////////
-// Variables
-// @_variables.scss
-//////////////////////////////
+/**
+ * @file /config/_variables.scss
+ * Variables
+ */
 
 //
 // Typography
@@ -20,7 +20,6 @@ $base-font-size:62.5%;
 // Colors
 
 // Primary
-
 
 $orange: #E06D06;
 
@@ -49,6 +48,9 @@ $pink: #EE7D6B;
 $pink-dark: #EA5D47;
 
 $green: #64A300;
+$green-light:#89E000 ;
+$green-lighter:#B0FF33;
+$green-lightest:#DBFEA3;
 $green-dark: #253D00;
 
 // Grays and Neutrals
@@ -64,7 +66,7 @@ $white: #FFFFFF;
 $black: #000;
 
 $link: $green;
-$link-highlight: $blue;
+$link-highlight: $green-lightest;
 
 /////////
 // Singularity variables

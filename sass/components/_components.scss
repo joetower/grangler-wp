@@ -1,23 +1,20 @@
-//////////////////////////////
-// Components
-// @_components.scss
-//////////////////////////////
+/**
+ * @file /components/_components.scss
+ * All component includes
+ */
 
 @import "wrapper";
 @import "container";
 @import "header";
-@import "logo";
 @import "link";
 @import "list";
 @import "button";
-@import "menu";
 @import "main-menu";
 @import "article";
-@import "article-info";
+@import "entry-footer";
 @import "forms";
 @import "checkbox";
 @import "radio";
-@import "select";
 @import "hr";
 @import "table";
 @import "table-wrap";
@@ -30,7 +27,6 @@
 @import "message";
 @import "search";
 @import "selection";
-@import "breadcrumbs";
 @import "social";
 @import "album-entries";
 @import "site-title";

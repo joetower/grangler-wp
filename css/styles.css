@@ -1,8 +1,16 @@
+/**
+ * @file /styles.scss
+ * All the main style partials go here.
+ */
 /*
 //////////////////////////////
 // Config
 //////////////////////////////
 */
+/**
+ * @file /config/_config.scss
+ * All the configuration
+ */
 html {
   box-sizing: border-box; }
 
@@ -28,6 +36,22 @@ video {
  * A partial implementation of the Ruby display functions from Compass:
  * https://github.com/Compass/compass/blob/stable/core/lib/compass/core/sass_extensions/functions/display.rb
  */
+/**
+ * @file /config/_variables.scss
+ * Variables
+ */
+/**
+ * @file /config/_mixins.scss
+ * Mixins for allthethings
+ */
+/**
+ * @file /config/_functions.scss
+ * Functions
+ */
+/**
+ * @file /config/_flexbox.scss
+ * Flexbox mixin
+ */
 /*
 ////////////
 */
@@ -35,6 +59,10 @@ video {
 //////////////////////////////
 // GLOBALS
 */
+/**
+ * @file /global/_normalize.scss
+ * Normalize Reset File
+ */
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -447,6 +475,10 @@ img {
   overflow: hidden;
   *zoom: 1; }
 
+/**
+ * @file /global/_typography.scss
+ * Typography styles
+ */
 body,
 html {
   font-family: "Open Sans", Arial, sans-serif;
@@ -629,14 +661,22 @@ ol {
 // COMPONENTS
 //////////////////////////////
 */
+/**
+ * @file /components/_components.scss
+ * All component includes
+ */
+/**
+ * @file /components/_wrapper.scss
+ * Wrapper styles - contain site components
+ */
 .wrapper,
 .container,
 footer .site-info,
-.breadcrumb,
-.breadcrumbs,
-.post .entry-header,
 .post .entry-content,
 .post .entry-footer,
+.post.teaser.type-post .entry-header,
+.post.teaser.type-post .entry-content,
+.post.teaser.type-post .entry-footer,
 .comments-area .comment-respond {
   margin: 0 auto;
   max-width: 1050px;
@@ -644,96 +684,36 @@ footer .site-info,
   .wrapper:empty,
   .container:empty,
   footer .site-info:empty,
-  .breadcrumb:empty,
-  .breadcrumbs:empty,
-  .post .entry-header:empty,
   .post .entry-content:empty,
   .post .entry-footer:empty,
+  .post.teaser.type-post .entry-header:empty,
+  .post.teaser.type-post .entry-content:empty,
+  .post.teaser.type-post .entry-footer:empty,
   .comments-area .comment-respond:empty {
     display: none; }
-  header .wrapper,
-  header .container,
-  header footer .site-info,
-  footer header .site-info,
-  header .breadcrumb,
-  header
-  .breadcrumbs,
-  header .post .entry-header,
-  .post header .entry-header,
-  header
-  .post .entry-content,
-  .post header .entry-content,
-  header
-  .post .entry-footer,
-  .post header .entry-footer,
-  header .comments-area .comment-respond,
-  .comments-area header .comment-respond {
-    max-width: 1220px; }
 
+/**
+ * @file /components/_container.scss
+ * Container class defaults
+ */
 .container {
   padding: 0; }
 
-header {
+/**
+ * @file /components/_header.scss
+ * Header design
+ */
+header.site-header {
   padding: 15px;
   color: #474D51; }
   @media (min-width: 64em) {
-    header {
+    header.site-header {
       padding: 45px 15px; } }
 
-.logo {
-  display: block; }
-  .logo.site-logo {
-    width: 100%;
-    max-width: 300px; }
-    @media (min-width: 48em) {
-      .logo.site-logo {
-        width: auto; } }
-    @media (min-width: 64em) {
-      .logo.site-logo {
-        max-width: 320px; } }
-  .logo.footer-logo {
-    max-width: 150px;
-    min-width: 50px; }
-    @media (min-width: 64em) {
-      .logo.footer-logo {
-        max-width: 200px; } }
-  .logo .logo {
-    margin: 0;
-    padding: 0;
-    text-indent: -1000px;
-    overflow: hidden;
-    height: 0;
-    padding-bottom: 50%;
-    width: 100%;
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat; }
-    .logo .logo.acc-c {
-      background-image: url("../img/logos/acc-logo-c.svg");
-      padding-bottom: 100%;
-      background-position: left center; }
-    .logo .logo.acc-c-white {
-      background-image: url("../img/logos/acc-logo-c-white.svg");
-      padding-bottom: 100%;
-      background-position: left center; }
-    .logo .logo.acc-stacked-c {
-      background-image: url("../img/logos/acc-logo-stacked-c.svg");
-      background-position: left center;
-      padding-bottom: 50%; }
-    .logo .logo.acc-stacked {
-      background-image: url("../img/logos/acc-logo-stacked.svg");
-      background-position: left center; }
-    .logo .logo.acc-inline {
-      background-image: url("../img/logos/acc-logo-inline.svg"); }
-    .logo .logo.acc-inline-c {
-      background-image: url("../img/logos/acc-logo-inline-c-larger.svg");
-      background-position: left center;
-      padding-bottom: 25%; }
-    .logo .logo.acc {
-      background-image: url("../img/logos/acc-logo.svg");
-      background-position: left center;
-      padding-bottom: 70%; }
-
+/**
+ * @file /components/_link.scss
+ * Link styles
+ */
 a,
 a:link {
   color: #64A300;
@@ -746,39 +726,27 @@ a:link {
   a:hover,
   a:link:hover {
     color: #284100; }
-  .page-node-type-blog .main article a:not(.button),
-  .page-node-type-article .main article a:not(.button), .page-node-type-blog .main article
-  a:link:not(.button),
-  .page-node-type-article .main article
+  article.full a:not(.button), article.full
   a:link:not(.button) {
     border-bottom: 3px solid #64A300;
-    background-image: -webkit-linear-gradient(left, transparent 50%, #3F88C5 50%);
-    background-image: linear-gradient(to right, transparent 50%, #3F88C5 50%);
-    background-position: 0;
-    background-size: 200%;
     -webkit-transition: all 0.2s;
             transition: all 0.2s; }
-    .page-node-type-blog .main article a:not(.button):hover,
-    .page-node-type-article .main article a:not(.button):hover, .page-node-type-blog .main article
-    a:link:not(.button):hover,
-    .page-node-type-article .main article
+    article.full a:not(.button):hover, article.full
     a:link:not(.button):hover {
-      border-color: #265276;
-      background-position: -100%; }
-    .page-node-type-blog .main article a:not(.button):visited,
-    .page-node-type-article .main article a:not(.button):visited, .page-node-type-blog .main article
-    a:link:not(.button):visited,
-    .page-node-type-article .main article
+      background-color: #DBFEA3;
+      border-color: #839862; }
+    article.full a:not(.button):visited, article.full
     a:link:not(.button):visited {
       border-color: #e0edcc; }
-      .page-node-type-blog .main article a:not(.button):visited:hover,
-      .page-node-type-article .main article a:not(.button):visited:hover, .page-node-type-blog .main article
-      a:link:not(.button):visited:hover,
-      .page-node-type-article .main article
+      article.full a:not(.button):visited:hover, article.full
       a:link:not(.button):visited:hover {
         border-color: #3c6200;
         color: #3c6200; }
 
+/**
+ * @file /components/_list.scss
+ * List styles
+ */
 ul,
 ol {
   margin: 0;
@@ -819,6 +787,10 @@ ol {
       padding-left: 30px;
       list-style-type: none; }
 
+/**
+ * @file /components/_button.scss
+ * Button
+ */
 button,
 .button,
 a.button,
@@ -969,63 +941,45 @@ a.btn-x-small,
       font-size: 12px;
       font-size: 1.2rem; } }
 
-.menu,
-ul.menu {
-  margin: 0;
-  padding: 0;
-  font-family: "Open Sans", Arial, sans-serif; }
-  .menu li,
-  ul.menu li {
-    margin: 0;
-    padding: 0; }
-
+/**
+ * @file /components/_main-menu.scss
+ * Main Menu styles
+ */
 @media (min-width: 64em) {
-  .main-menu,
-  .menu--main {
+  .main-menu {
     margin-top: 15px; } }
 
-.main-menu ul,
-.menu--main ul {
+.main-menu ul {
   margin: 0;
   padding: 0; }
 
-.main-menu li,
-.menu--main li {
+.main-menu li {
   list-style-type: none; }
-  .main-menu li.hidden--large button,
-  .menu--main li.hidden--large button {
+  .main-menu li.hidden--large button {
     width: 100%; }
   @media (min-width: 0em) {
-    .main-menu li.hidden--small,
-    .menu--main li.hidden--small {
+    .main-menu li.hidden--small {
       display: none;
       visibility: hidden; } }
   @media (min-width: 48em) {
-    .main-menu li.hidden--small,
-    .menu--main li.hidden--small {
+    .main-menu li.hidden--small {
       display: inherit;
       visibility: visible; }
-    .main-menu li.hidden--medium,
-    .menu--main li.hidden--medium {
+    .main-menu li.hidden--medium {
       display: none;
       visibility: hidden; } }
   @media (min-width: 64em) {
-    .main-menu li.hidden--small,
-    .menu--main li.hidden--small {
+    .main-menu li.hidden--small {
       display: inherit;
       visibility: visible; }
-    .main-menu li.hidden--medium,
-    .menu--main li.hidden--medium {
+    .main-menu li.hidden--medium {
       display: inherit;
       visibility: visible; }
-    .main-menu li.hidden--large, .main-menu li.js-hidden--large,
-    .menu--main li.hidden--large,
-    .menu--main li.js-hidden--large {
+    .main-menu li.hidden--large, .main-menu li.js-hidden--large {
       display: none;
       visibility: hidden; } }
 
-.main-menu a,
-.menu--main a {
+.main-menu a {
   font-size: 14px;
   font-size: 1.4rem;
   display: block;
@@ -1035,27 +989,25 @@ ul.menu {
   text-align: center;
   padding: 10px 7.5px; }
   @media (min-width: 64em) {
-    .main-menu a,
-    .menu--main a {
+    .main-menu a {
       font-size: 16px;
       font-size: 1.6rem;
       font-weight: 700;
       padding: 15px 15px; } }
-  .main-menu a:hover,
-  .menu--main a:hover {
+  .main-menu a:hover {
     background-color: #393E41;
     color: #F6F7EB; }
-  .main-menu a.active, .main-menu a.is-active,
-  .menu--main a.active,
-  .menu--main a.is-active {
+  .main-menu a.active, .main-menu a.is-active {
     color: #FFFFFF;
     background-color: #26292B; }
-    .main-menu a.active:visited, .main-menu a.is-active:visited,
-    .menu--main a.active:visited,
-    .menu--main a.is-active:visited {
+    .main-menu a.active:visited, .main-menu a.is-active:visited {
       color: #FFFFFF;
       background-color: #26292B; }
 
+/**
+ * @file /components/_article.scss
+ * Article
+ */
 article {
   position: relative; }
   article p {
@@ -1063,29 +1015,30 @@ article {
     article p .button {
       margin-top: 15px; }
 
-.article-info {
-  font-size: 14px;
-  font-size: 1.4rem;
-  line-height: 2;
-  padding: 15px;
-  background-color: #F6F7EB;
-  font-style: italic;
-  border-bottom: 6px solid #C3C7CA; }
-  @media (min-width: 64em) {
-    .article-info {
-      max-width: 720px; } }
-  .article-info div {
-    display: inline-block;
-    padding: 0 5px; }
-    .article-info div.published {
-      display: block;
-      margin-bottom: 10px; }
-    .article-info div.categories {
-      font-size: 12px;
-      font-size: 1.2rem;
-      display: block;
-      padding: 0; }
+/**
+ * @file /components/_entry-footer.scss
+ * Entry footer parts
+ */
+.entry-footer .byline .author .photo {
+  -webkit-clip-path: circle(25px at center);
+          clip-path: circle(25px at center); }
 
+.entry-footer .byline .author a {
+  padding: 0 10px; }
+
+.entry-footer .posted-on {
+  display: inline-block; }
+
+.entry-footer .comments-link {
+  display: block; }
+
+.entry-footer .edit-link {
+  display: block; }
+
+/**
+ * @file /components/_forms.scss
+ * Forms
+ */
 fieldset {
   padding: 0 0 30px;
   border: 0; }
@@ -1137,7 +1090,7 @@ article form {
   background-color: #F6F7EB; }
 
 /**
- * @file _checkbox.scss
+ * @file /components/_checkbox.scss
  * Styles for input[type="checkbox"]
  * Note that these styles don't work in IE8, so the :not(#foo) selector string
  * (which IE8 also doesn't support) keeps these rules from applying to that
@@ -1171,11 +1124,8 @@ div:not(#foo) input[type="checkbox"] {
     font-weight: 700; }
 
 /**
- * @file _radio.scss
+ * @file /components/_radio.scss
  * Styles for input[type="radio"]
- * Note that these styles don't work in IE8, so the :not(#foo) selector string
- * (which IE8 also doesn't support) keeps these rules from applying to that
- * browser
  */
 div:not(#foo) input[type="radio"] {
   display: inline-block;
@@ -1204,6 +1154,10 @@ div:not(#foo) input[type="radio"] {
     color: #000;
     font-weight: 700; }
 
+/**
+ * @file /components/_hr.scss
+ * HR header row styles
+ */
 hr {
   border: 0;
   height: 4px;
@@ -1211,6 +1165,10 @@ hr {
   hr.color {
     background: #75AAD5; }
 
+/**
+ * @file /components/_tables.scss
+ * Table styles
+ */
 table {
   margin: 25px 0;
   border-collapse: collapse;
@@ -1236,11 +1194,19 @@ table {
     table th.last {
       border-right: none; }
 
+/**
+ * @file /components/_table-wrap.scss
+ * Tables should get wrapped and styled for very basic responsiveness
+ */
 .table-wrap {
   max-width: 1050px;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch; }
 
+/**
+ * @file /components/_footer.scss
+ * Footer design
+ */
 footer.site-footer {
   padding: 60px 30px;
   background-color: #393E41;
@@ -1253,11 +1219,19 @@ footer .site-info {
   footer .site-slogan {
     margin-right: 15px; } }
 
+/**
+ * @file /components/_site-slogan.scss
+ * Site slogan text
+ */
 .site-slogan {
   color: #393E41; }
   footer .site-slogan {
     color: #FFFFFF; }
 
+/**
+ * @file /components/_blockquotes.scss
+ * Blockquotes
+ */
 blockquote {
   margin: 15px 30px 30px;
   color: #393E41;
@@ -1269,6 +1243,10 @@ blockquote {
   background-size: 34px;
   background-position: left 50%; }
 
+/**
+ * @file /components/_figure.scss
+ * Figure
+ */
 figure {
   margin: 0;
   padding: 0;
@@ -1303,6 +1281,10 @@ figure {
       float: right;
       margin-left: 15px; } }
 
+/**
+ * @file /components/_figcaption.scss
+ * Figcaptions
+ */
 .caption > figcaption {
   display: block; }
 
@@ -1325,6 +1307,10 @@ figcaption {
     figcaption span.source + .copyright:before {
       content: "/"; }
 
+/**
+ * @file /components/_video.scss
+ * Video styles using intrinsic-ratio
+ */
 .video {
   margin-bottom: 30px; }
   .video .video-wrap {
@@ -1337,6 +1323,10 @@ figcaption {
       top: 0;
       width: 100%; }
 
+/**
+ * @file /components/_message.scss
+ * Message styles for system alerts
+ */
 .message,
 .messages {
   font-size: 18px;
@@ -1363,6 +1353,10 @@ figcaption {
     background-color: #64A300;
     border: 6px solid #253D00; }
 
+/**
+ * @file /components/_search.scss
+ * Search styles
+ */
 form.search input,
 .search-block-form form input {
   font-size: 14px;
@@ -1390,6 +1384,10 @@ form.search .form-actions,
 .search-block-form form .form-actions {
   display: none; }
 
+/**
+ * @file /components/_selection.scss
+ * Selection styles
+ */
 ::-moz-selection {
   background-color: #E3B23C;
   color: #26292B; }
@@ -1398,6 +1396,10 @@ form.search .form-actions,
   background-color: #E3B23C;
   color: #26292B; }
 
+/**
+ * @file /components/_social.scss
+ * Social link styles
+ */
 .social {
   margin-bottom: 15px; }
   .social .block-region-social {
@@ -1416,6 +1418,10 @@ form.search .form-actions,
     .social .block-region-social .sharethis-wrapper {
       display: inline-block; }
 
+/**
+ * @file /components/_album-entries.scss
+ * Album entry posts
+ */
 .album-entries {
   margin: 0;
   padding: 0; }
@@ -1440,6 +1446,10 @@ form.search .form-actions,
       float: left;
       margin-right: 15px; } }
 
+/**
+ * @file /components/_site-title.scss
+ * Site title and logo styles
+ */
 .site-title a {
   display: block;
   margin: 0;
@@ -1459,6 +1469,14 @@ form.search .form-actions,
 // Layouts
 //////////////////////////////
 */
+/**
+ * @file /layouts/_layouts.scss
+ * Include all layout-based partials here
+ */
+/**
+ * @file /layouts/_html.scss
+ * HTML Layout
+ */
 body {
   display: -webkit-box;
   display: -moz-flex;
@@ -1478,7 +1496,8 @@ body {
   body .site-footer,
   body .site,
   body .site-inner,
-  body .site-main {
+  body .site-main,
+  body .comments-area {
     display: -webkit-box;
     display: -moz-flex;
     display: -ms-flexbox;
@@ -1491,6 +1510,10 @@ body {
             flex: 1 0 auto;
     width: 100%; }
 
+/**
+ * @file /layouts/_header.scss
+ * Header Layout
+ */
 header .site-header-main {
   overflow: hidden;
   *zoom: 1;
@@ -1553,8 +1576,11 @@ header .menu--main {
     header .menu--main {
       margin-top: 0; } }
 
-.main-menu ul.menu,
-.menu--main ul.menu {
+/**
+ * @file /layouts/_main-menu.scss
+ * Main-menu Layout
+ */
+.main-menu ul.menu {
   display: -webkit-box;
   display: -moz-flex;
   display: -ms-flexbox;
@@ -1576,8 +1602,7 @@ header .menu--main {
   -ms-flex-line-pack: stretch;
   align-content: stretch; }
   @media (min-width: 64em) {
-    .main-menu ul.menu,
-    .menu--main ul.menu {
+    .main-menu ul.menu {
       -webkit-box-align: start;
       -ms-flex-align: start;
       -moz-align-items: flex-start;
@@ -1585,8 +1610,7 @@ header .menu--main {
       -ms-flex-line-pack: start;
       align-content: flex-start; } }
 
-.main-menu li,
-.menu--main li {
+.main-menu li {
   display: -webkit-box;
   display: -moz-flex;
   display: -ms-flexbox;
@@ -1598,24 +1622,20 @@ header .menu--main {
   -webkit-box-flex: 1;
           flex: 1 0 25%; }
   @media (min-width: 48em) {
-    .main-menu li,
-    .menu--main li {
+    .main-menu li {
       -moz-flex: 1 0 16.666%;
       -ms-flex: 1 0 16.666%;
       -webkit-box-flex: 1;
               flex: 1 0 16.666%; } }
   @media (min-width: 64em) {
-    .main-menu li,
-    .menu--main li {
+    .main-menu li {
       -moz-flex: 1 0 auto;
       -ms-flex: 1 0 auto;
       -webkit-box-flex: 1;
               flex: 1 0 auto; } }
-  .main-menu li button,
-  .menu--main li button {
+  .main-menu li button {
     width: 100%; }
-  .main-menu li a,
-  .menu--main li a {
+  .main-menu li a {
     -moz-flex: 1 1 15%;
     -ms-flex: 1 1 15%;
     -webkit-box-flex: 1;
@@ -1624,13 +1644,16 @@ header .menu--main {
     /* non-flexbox browsers */
     margin: 0; }
     @media (min-width: 64em) {
-      .main-menu li a,
-      .menu--main li a {
+      .main-menu li a {
         -moz-flex: 1 auto;
         -ms-flex: 1 auto;
         -webkit-box-flex: 1;
                 flex: 1 auto; } }
 
+/**
+ * @file /layouts/_footer.scss
+ * Footer Layout
+ */
 footer.site-footer {
   overflow: hidden;
   *zoom: 1;
@@ -1713,6 +1736,10 @@ footer .social {
     footer .social a:hover {
       opacity: .7; }
 
+/**
+ * @file /layouts/_post-full.scss
+ * Post full layout
+ */
 .post.full.type-post {
   display: -webkit-box;
   display: -moz-flex;
@@ -1742,21 +1769,31 @@ footer .social {
       -moz-flex-direction: row;
       -ms-flex-direction: row;
       flex-direction: row;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -moz-align-items: center;
-      align-items: center;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      -moz-justify-content: space-between;
-      justify-content: space-between;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap; } }
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      -moz-justify-content: flex-start;
+      justify-content: flex-start;
+      -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+      -moz-align-items: stretch;
+      align-items: stretch;
+      -ms-flex-line-pack: start;
+      align-content: flex-start; } }
   .post.full.type-post .post-thumbnail {
     margin: 0 auto 30px;
     width: 100%; }
     .post.full.type-post .post-thumbnail img {
       width: 100%; }
+  .post.full.type-post .entry-content {
+    -moz-flex: 1 auto;
+    -ms-flex: 1 auto;
+    -webkit-box-flex: 1;
+            flex: 1 auto; }
+    @media (min-width: 48em) {
+      .post.full.type-post .entry-content {
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2; } }
   .post.full.type-post .entry-footer {
     -moz-flex: 1 auto;
     -ms-flex: 1 auto;
@@ -1764,24 +1801,18 @@ footer .social {
             flex: 1 auto; }
     @media (min-width: 48em) {
       .post.full.type-post .entry-footer {
-        -moz-flex: 1 20%;
-        -ms-flex: 1 20%;
+        -moz-flex: 1 0 200px;
+        -ms-flex: 1 0 200px;
         -webkit-box-flex: 1;
-                flex: 1 20%; } }
-  .post.full.type-post .entry-content,
-  .post.full.type-post .entry-header {
-    -moz-flex: 1 auto;
-    -ms-flex: 1 auto;
-    -webkit-box-flex: 1;
-            flex: 1 auto; }
-    @media (min-width: 48em) {
-      .post.full.type-post .entry-content,
-      .post.full.type-post .entry-header {
-        -moz-flex: 1 80%;
-        -ms-flex: 1 80%;
-        -webkit-box-flex: 1;
-                flex: 1 80%; } }
+                flex: 1 0 200px;
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1; } }
 
+/**
+ * @file /layouts/_post-teaser.scss
+ * Post teasers layout
+ */
 .post.teaser.type-post {
   display: -webkit-box;
   display: -moz-flex;
@@ -1875,6 +1906,10 @@ footer .social {
             flex: 1 auto;
     padding: 0 30px; }
 
+/**
+ * @file /layouts/_comments-area.scss
+ * Comments Area Layout
+ */
 .comments-area {
   overflow: hidden;
   *zoom: 1;
@@ -1887,6 +1922,10 @@ footer .social {
     margin-top: 30px;
     clear: both; }
 
+/**
+ * @file /layouts/_content-bottom-widgets.scss
+ * Content Bottom Widget Layout
+ */
 .content-bottom-widgets {
   display: -webkit-box;
   display: -moz-flex;

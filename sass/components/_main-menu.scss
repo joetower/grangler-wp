@@ -1,10 +1,9 @@
-//////////////////////////////
-// main menu
-// @_main-menu.scss
-//////////////////////////////
+/**
+ * @file /components/_main-menu.scss
+ * Main Menu styles
+ */
 
-.main-menu,
-.menu--main {
+.main-menu {
 
   @include breakpoint($large) {
     margin-top: $space-one-half;

@@ -1,10 +1,9 @@
-//////////////////////////////
-// main menu
-// @_main-menu.scss
-//////////////////////////////
+/**
+ * @file /layouts/_main-menu.scss
+ * Main-menu Layout
+ */
 
-.main-menu,
-.menu--main {
+.main-menu {
 
   ul.menu {
     @include flexbox();

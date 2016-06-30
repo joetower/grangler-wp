@@ -1,7 +1,7 @@
-//////////////////////////////
-// table-wrap
-// @_table-wrap.scss
-//////////////////////////////
+/**
+ * @file /components/_table-wrap.scss
+ * Tables should get wrapped and styled for very basic responsiveness
+ */
 
 .table-wrap {
   max-width: $grid-width;

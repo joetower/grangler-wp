@@ -1,7 +1,8 @@
-//////////////////////////////
-// link
-// @_link.scss
-//////////////////////////////
+/**
+ * @file /components/_link.scss
+ * Link styles
+ */
+
 a,
 a:link {
   color: $link;
@@ -16,19 +17,14 @@ a:link {
   }
 
   // fancy links for full node links
-  .page-node-type-blog .main article &,
-  .page-node-type-article .main article & {
+  article.full & {
     &:not(.button) {
       border-bottom: $border-width/2 solid $link;
-      background-image: linear-gradient(to right, transparent 50%, $link-highlight 50%);
-      background-position: 0;
-       // make the background twice as big
-      background-size: 200%;
       transition: all 0.2s;
 
       &:hover {
+        background-color: $link-highlight;
         border-color: mix($black, $link-highlight, 40%);
-        background-position: -100%;
       }
       &:visited {
         border-color: mix($white, $link, 80%);

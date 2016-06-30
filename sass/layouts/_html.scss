@@ -1,7 +1,7 @@
-//////////////////////////////
-// html
-// @_html.scss
-//////////////////////////////
+/**
+ * @file /layouts/_html.scss
+ * HTML Layout
+ */
 
 body {
   @include flexbox();
@@ -16,7 +16,8 @@ body {
   .site-footer,
   .site,
   .site-inner,
-  .site-main {
+  .site-main,
+  .comments-area {
     @include flexbox();
     @include flex-flow(row wrap);
     @include flex(1 0 auto);

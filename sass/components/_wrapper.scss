@@ -1,7 +1,7 @@
-//////////////////////////////
-// wrapper
-// @_wrapper.scss
-//////////////////////////////
+/**
+ * @file /components/_wrapper.scss
+ * Wrapper styles - contain site components
+ */
 
 .wrapper,
 %wrapper {
@@ -10,8 +10,5 @@
   padding: $space;
   &:empty {
     display: none;
-  }
-  header & {
-    max-width: $grid-width-large;
   }
 }

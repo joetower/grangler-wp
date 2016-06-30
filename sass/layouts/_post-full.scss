@@ -1,7 +1,7 @@
-//////////////////////////////
-// post-full
-// @_post-full.scss
-//////////////////////////////
+/**
+ * @file /layouts/_post-full.scss
+ * Post full layout
+ */
 
 .post {
 
@@ -15,9 +15,9 @@
 
     @include breakpoint($small-medium) {
       @include flex-direction(row);
-      @include align-items(center);
-      @include justify-content(space-between);
-      @include flex-wrap(wrap);
+      @include justify-content(flex-start);
+      @include align-items(stretch);
+      @include align-content(flex-start);
     }
     .post-thumbnail {
       margin: 0 auto $space;
@@ -26,23 +26,22 @@
         width: 100%;
       }
     }
+    .entry-content {
+      @include flex(1 auto);
+
+      @include breakpoint($medium) {
+        order: 2;
+      }
+    }
     .entry-footer {
       @include flex(1 auto);
 
       @include breakpoint($medium) {
-        @include flex(1 20%);
-      }
-    }
-    .entry-content,
-    .entry-header {
-      @include flex(1 auto);
-
-      @include breakpoint($medium) {
-        @include flex(1 80%);
+        @include flex(1 0 200px);
+        order: 1;
       }
     }
   }
-  .entry-header,
   .entry-content,
   .entry-footer{
     @extend %wrapper;

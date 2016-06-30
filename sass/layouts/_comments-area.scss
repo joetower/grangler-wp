@@ -1,7 +1,7 @@
-//////////////////////////////
-// comments-area
-// @_comments-area.scss
-//////////////////////////////
+/**
+ * @file /layouts/_comments-area.scss
+ * Comments Area Layout
+ */
 
 .comments-area {
   @include clearfix();

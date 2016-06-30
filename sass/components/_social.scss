@@ -1,11 +1,11 @@
-//////////////////////////////
-// Social
-// @_social.scss
-//////////////////////////////
+/**
+ * @file /components/_social.scss
+ * Social link styles
+ */
 
 .social {
   margin-bottom: $space-one-half;
-  
+
   .block-region-social {
     background-color: $gray-lightest;
     padding: $space-one-half;
