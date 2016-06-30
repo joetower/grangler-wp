@@ -37,12 +37,12 @@ a.btn-primary:visited,
 .btn-primary:link,
 .btn-primary:visited,
 %btn-primary {
-  background-color: $blue;
+  background-color: $green;
   color: $black;
-  border: 1px solid darken($blue, 15%);
+  border: 1px solid darken($green, 15%);
   &:hover {
-    background-color: lighten($blue, 15%);
-    border-color: $blue;
+    background-color: lighten($green, 15%);
+    border-color: $green;
   }
 }
 

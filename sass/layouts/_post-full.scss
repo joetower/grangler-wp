@@ -1,18 +1,11 @@
 //////////////////////////////
-// posts
-// @_posts.scss
+// post-full
+// @_post-full.scss
 //////////////////////////////
 
 .post {
-  .post-thumbnail {
-    margin: 0 auto $space;
-    width: 100%;
-    img {
-      width: 100%;
-    }
-  }
 
-  &.type-post {
+  &.full.type-post {
     @include flexbox();
     @include flex-wrap(wrap);
     @include flex-direction(column);
@@ -25,12 +18,16 @@
       @include align-items(center);
       @include justify-content(space-between);
       @include flex-wrap(wrap);
-
     }
-
+    .post-thumbnail {
+      margin: 0 auto $space;
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
     .entry-footer {
       @include flex(1 auto);
-      order:1;
 
       @include breakpoint($medium) {
         @include flex(1 20%);
@@ -45,13 +42,9 @@
       }
     }
   }
-
   .entry-header,
   .entry-content,
   .entry-footer{
     @extend %wrapper;
-  }
-  .entry-header {
-    margin-bottom: $space;
   }
 }

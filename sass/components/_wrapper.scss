@@ -11,26 +11,7 @@
   &:empty {
     display: none;
   }
-  @include breakpoint($x-large) {
-    padding: 0;
-  }
   header & {
     max-width: $grid-width-large;
-  }
-}
-
-// if colorbar is present, add padding otherwise no
-.top + .wrapper {
-  padding: 0 $space;
-
-  @include breakpoint($x-large) {
-    padding: 0;
-  }
-}
-.top.colorbar + .wrapper {
-  padding: $space;
-
-  @include breakpoint($x-large) {
-    padding: $space 0;
   }
 }
