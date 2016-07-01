@@ -4,23 +4,35 @@
  */
 
 .entry-footer {
+  background-color: $gray-lightest;
+
   .byline {
     .author {
       .photo {
         clip-path: circle(25px at center);
       }
-      a {
-        padding: 0 $space-one-third;
-      }
     }
   }
+  a {
+    padding: 0 $space-one-third;
+  }
   .posted-on {
-    display: inline-block;
+    display: block;
+    
+    @include breakpoint($medium) {
+      display: inline-block;
+    }
+    .teaser & {
+      display: inline-block;
+    }
   }
   .comments-link {
     display: block;
   }
   .edit-link {
     display: block;
+  }
+  .updated:not(.published) {
+    display: none;
   }
 }

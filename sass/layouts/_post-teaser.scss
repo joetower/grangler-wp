@@ -27,8 +27,9 @@
     .post-thumbnail {
       @include flex(1 auto);
       background-color: $green;
+
       @include breakpoint($medium) {
-        @include flex(0 1 40%);
+        @include flex(0 1 30%);
       }
       img {
         width: 100%;
@@ -42,7 +43,7 @@
     }
     .teaser {
       @include breakpoint($medium) {
-        @include flex(0 1 60%);
+        @include flex(0 1 70%);
       }
     }
     .entry-header {
@@ -56,9 +57,9 @@
     }
     .entry-footer {
       @include flex(1 auto);
-      padding: 0 $space;
+      padding:$space-one-half $space;
     }
-    
+
     .entry-header,
     .entry-content,
     .entry-footer{

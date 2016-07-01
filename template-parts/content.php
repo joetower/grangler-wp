@@ -11,7 +11,13 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class('teaser' ); ?>>
 	<?php twentysixteen_excerpt(); ?>
 
-	<?php twentysixteen_post_thumbnail('thumbnail'); ?>
+	<?php if ( has_post_thumbnail()) : ?>
+		<div class="post-thumbnail">
+			<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
+			<?php the_post_thumbnail('teaser-square'); ?>
+			</a>
+	 	</div>
+	 <?php endif; ?>
 
 	<div class="teaser">
 	  <header class="entry-header">
