@@ -1020,10 +1020,13 @@ article {
  * Entry footer parts
  */
 .entry-footer {
-  background-color: #F6F7EB; }
-  .entry-footer .byline .author .photo {
-    -webkit-clip-path: circle(25px at center);
-            clip-path: circle(25px at center); }
+  background-color: #F6F7EB;
+  font-weight: 700; }
+  .entry-footer .byline {
+    margin-bottom: 15px; }
+    .entry-footer .byline .author .photo {
+      -webkit-clip-path: circle(25px at center);
+              clip-path: circle(25px at center); }
   .entry-footer a {
     padding: 0 10px; }
   .entry-footer .posted-on {

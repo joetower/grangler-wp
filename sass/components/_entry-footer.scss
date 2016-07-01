@@ -5,8 +5,11 @@
 
 .entry-footer {
   background-color: $gray-lightest;
+  font-weight: $sans-bold;
 
   .byline {
+    margin-bottom: $space-one-half;
+
     .author {
       .photo {
         clip-path: circle(25px at center);
@@ -18,7 +21,7 @@
   }
   .posted-on {
     display: block;
-    
+
     @include breakpoint($medium) {
       display: inline-block;
     }
