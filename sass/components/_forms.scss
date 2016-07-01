@@ -31,11 +31,11 @@ input[type=text],
 input[type=email],
 input[type=password],
 textarea {
-  border: 2px solid $blue;
+  border: 2px solid $green;
 
   &:focus {
-    border-color: $blue-light;
-    outline-color: $blue-light;
+    border-color: $green-light;
+    outline-color: $green-light;
   }
 }
 input[type=text],

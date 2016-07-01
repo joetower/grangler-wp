@@ -60,9 +60,11 @@
 								<figure>
 									<img src="<?php echo $cover['url']; ?>" alt="<?php echo $cover['alt'] ?>" />
 								</figure>
-								<span class="position"><?php echo $position; ?></span>
-								<h2><?php echo $artist; ?></h2>
-								<h3><?php echo $album; ?></h3>
+								<div class="album-content">
+									<span class="album-position"><?php echo $position; ?></span>
+									<h2 class="artist-name"><?php echo $artist; ?></h2>
+									<h3 class="album-title"><?php echo $album; ?></h3>
+								</div>
 							</div>
 	            <?php echo $review; ?>
 							<?php echo $song; ?>

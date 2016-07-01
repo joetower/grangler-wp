@@ -10,15 +10,15 @@ form.search,
     padding:$space-one-third $space-one-third $space-one-third $space+$space-one-half;
     background-position: 10px center;
     background-size: 20px;
-    border: 2px solid $blue;
+    border: 2px solid $green;
     width: 100%;
 
     @include breakpoint($large) {
       width: auto;
     }
     &:focus {
-      border-color: $blue-light;
-      outline-color: $blue-light;
+      border-color: $green-light;
+      outline-color: $green-light;
     }
   }
   .form-item {

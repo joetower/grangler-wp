@@ -4,11 +4,14 @@
  */
 
 .album-entries {
+  @include clearfix();
   margin: 0;
   padding: 0;
+
   li {
+    display: block;
     list-style: none;
-    padding: $space-one-half 0;
+    padding: $space 0;
     + li {
       margin-top: $space;
       border-top: $border-width solid $gray-lightest;
@@ -16,20 +19,60 @@
 
     .top-section {
       @include clearfix();
-
       margin-bottom: $space-one-half;
     }
   }
-  .position {
-    @include font-size(2.8);
-    color: $green;
-    font-weight: $sans-bolder;
-  }
-  figure {
+  .album-content {
+    padding: $space 0;
+    text-align: center;
+
     @include breakpoint($medium) {
-      max-width: $max-image-width-small;
+      display: inline-block;
+      padding: $space-one-half 0;
       float: left;
-      margin-right: $space-one-half;
+      max-width: 60%;
+      text-align: left;
     }
   }
+  .album-position {
+    @include font-size(2.8);
+    display: inline-block;
+    color: $yellow;
+    font-weight: $sans-bolder;
+    border-radius: 50%;
+    background-color: $brown;
+    padding: $space-one-third $space-one-half;
+    margin-bottom: $space-one-half;
+  }
+  .album-title {
+    margin-top: $space-one-third;
+    padding-top: $space-one-third;
+    border-top: $border-width solid $yellow;
+  }
+  figure {
+    margin-bottom: $space;
+
+    @include breakpoint($medium) {
+      float: left;
+      max-width: 40%;
+      margin-right: $space;
+      margin-bottom: 0;
+    }
+  }
+}
+
+// Sections
+.honorables {
+  @include clearfix();
+
+  margin-top: $space;
+  padding-top: $space;
+  border-top: $border-width dotted $cream;
+}
+.worst {
+  @include clearfix();
+
+  margin-top: $space;
+  padding-top: $space;
+  border-top: $border-width dotted $cream;
 }

@@ -66,23 +66,13 @@ h2,
 %h2 {
   @include font-size(2.4);
 
-  font-weight: $sans-bold;
+  font-weight: $sans-bolder;
   color:$gray;
   &.entry-title {
     margin: 0;
   }
   @include breakpoint($large) {
-    @include font-size(2.8);
-  }
-
-  // smaller for teaser titles
-  .enhanced_teaser &,
-  .teaser & {
-    @include font-size(1.8);
-
-    @include breakpoint($large) {
-      @include font-size(2);
-    }
+    @include font-size(3);
   }
 
   &.subtitle {
@@ -106,8 +96,8 @@ h2,
 h3,
 %h3 {
   @include font-size(1.8);
-
-  font-weight: $sans-bolder;
+  color: $brown-mid-dark;
+  font-weight: $sans-bold;
   text-transform: uppercase;
 
   @include breakpoint($large) {
