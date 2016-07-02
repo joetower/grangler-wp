@@ -49,14 +49,17 @@
 		<footer class="entry-footer">
 			<div class="byline">
 				<span class="author">
-					<em>Authored by</em>
 					<?php echo get_avatar( get_the_author_meta( 'ID' ), 60 ); ?>
+					<em>Authored by</em>
 					<span class="name">
 						<a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>"><?php the_author(); ?></a>
 					</span>
 				</span>
 			</div>
 			<div class="meta">
+				<span class="posted-on">
+					<em>This entry was posted on</em> <?php the_time('l, F jS, Y') ?>
+				</span>
 				<span class="categories">
 					<em>Posted in: </em> <?php the_category(' | ') ?>
 				</span>
@@ -64,6 +67,7 @@
 					<?php the_tags(' <em>Tagged:</em> ') ?>
 				</span>
 			</div>
+
 			<?php
 				edit_post_link(
 					sprintf(
@@ -76,6 +80,5 @@
 				);
 			?>
 		</footer><!-- .entry-footer -->
-	</div><!-- .teaser -->
 
 </article><!-- #post-## -->

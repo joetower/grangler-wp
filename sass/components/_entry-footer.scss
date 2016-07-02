@@ -8,15 +8,12 @@
   font-weight: $sans-bold;
 
   .byline {
-    display:inline-block;
+    display: block;
     margin-bottom: $space-one-half;
 
-    @include breakpoint($large) {
-      display: block;
-    }
     .author {
       display: inline-block;
-      
+
       .photo {
         display: inline-block;
         clip-path: circle(25px at center);
@@ -26,8 +23,17 @@
       }
     }
   }
-  .posted-on,
-  .tags-links,
+
+  .meta {
+    display:block;
+    margin-bottom: $space-one-half;
+    .categories {
+      display: block;
+    }
+    .posted-on {
+      display: block;
+    }
+  }
   .comments-link {
     display: inline-block;
     a {
@@ -39,9 +45,6 @@
         display: block;
         padding: $space-one-third;
       }
-    }
-    .teaser & {
-      display: inline-block;
     }
   }
 

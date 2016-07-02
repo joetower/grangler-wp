@@ -1015,11 +1015,8 @@ article {
   background-color: #F6F7EB;
   font-weight: 700; }
   .entry-footer .byline {
-    display: inline-block;
+    display: block;
     margin-bottom: 15px; }
-    @media (min-width: 64em) {
-      .entry-footer .byline {
-        display: block; } }
     .entry-footer .byline .author {
       display: inline-block; }
       .entry-footer .byline .author .photo {
@@ -1028,28 +1025,23 @@ article {
                 clip-path: circle(25px at center); }
       .entry-footer .byline .author a {
         padding: 0 10px; }
-  .entry-footer .posted-on,
-  .entry-footer .tags-links,
+  .entry-footer .meta {
+    display: block;
+    margin-bottom: 15px; }
+    .entry-footer .meta .categories {
+      display: block; }
+    .entry-footer .meta .posted-on {
+      display: block; }
   .entry-footer .comments-link {
     display: inline-block; }
-    .entry-footer .posted-on a,
-    .entry-footer .tags-links a,
     .entry-footer .comments-link a {
       padding: 0 10px; }
     @media (min-width: 64em) {
-      .entry-footer .posted-on,
-      .entry-footer .tags-links,
       .entry-footer .comments-link {
         display: block; }
-        .entry-footer .posted-on a,
-        .entry-footer .tags-links a,
         .entry-footer .comments-link a {
           display: block;
           padding: 10px; } }
-    .teaser .entry-footer .posted-on, .teaser
-    .entry-footer .tags-links, .teaser
-    .entry-footer .comments-link {
-      display: inline-block; }
   .entry-footer .edit-link {
     display: block; }
     .entry-footer .edit-link a {
