@@ -1469,16 +1469,16 @@ form.search .form-actions,
         display: inline-block;
         padding: 15px 0;
         float: left;
-        max-width: 60%;
+        width: 56%;
         text-align: left; } }
   .album-entries .album-position {
     font-size: 28px;
     font-size: 2.8rem;
     display: inline-block;
-    color: #E3B23C;
+    color: #433E0E;
     font-weight: 800;
     border-radius: 50%;
-    background-color: #433E0E;
+    background-color: #E3B23C;
     padding: 10px 15px;
     margin-bottom: 15px; }
   .album-entries .album-title {
@@ -1490,8 +1490,8 @@ form.search .form-actions,
     @media (min-width: 48em) {
       .album-entries figure {
         float: left;
-        max-width: 40%;
-        margin-right: 30px;
+        width: 40%;
+        margin-right: 4%;
         margin-bottom: 0; } }
 
 .honorables {
