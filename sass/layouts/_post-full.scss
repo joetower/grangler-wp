@@ -48,9 +48,9 @@
         order: 2;
       }
     }
-  }
-  .entry-content,
-  .entry-footer{
-    @extend %wrapper;
+    .entry-content,
+    .entry-footer{
+      @extend %wrapper;
+    }
   }
 }

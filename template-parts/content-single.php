@@ -19,9 +19,11 @@
 				<?php the_title( '<h1 class="post-title">', '</h1>' ); ?>
 			</header><!-- .entry-header -->
 
+			<?php get_template_part( 'template-parts/with-paint-images' ); ?>
 			<?php get_template_part( 'template-parts/with-paint-details' ); ?>
+
 			<?php get_template_part( 'template-parts/design-assets' ); ?>
-			
+
 			<?php
 				the_content();
 

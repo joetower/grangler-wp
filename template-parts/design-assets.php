@@ -19,13 +19,13 @@ if( $fileDownload ):
 
 	if( $caption ): ?>
 
-	<div class="wp-caption">
+	<div class="wp-caption design-asset download">
 
 	<?php endif; ?>
 
 	<a href="<?php echo $url; ?>" title="<?php echo $title; ?>">
 		<img src="<?php echo $icon; ?>" />
-		<span><?php echo $title; ?></span>
+		<span>Download file</span>
 	</a>
 
 	<?php if( $caption ): ?>

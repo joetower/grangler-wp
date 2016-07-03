@@ -1,0 +1,29 @@
+/**
+ * @file /components/_design-asset.scss
+ * Design assets
+ */
+
+.design-asset {
+  display: inline-block;
+  margin: $space 0;
+  padding: $space-one-half;
+  border: $border-width solid $yellow;
+  a {
+    display: block;
+    vertical-align: middle;
+    span {
+      vertical-align: middle;
+      font-weight: $sans-bold;
+    }
+  }
+  img {
+    margin: $space-one-fourth;
+    width: 18px;
+    height: auto;
+  }
+  .wp-caption-text {
+    @include font-size(1.4);
+    font-style: italic;
+    margin-top: $space-one-half;
+  }
+}

@@ -1,0 +1,17 @@
+/**
+ * @file /components/_with-paint.scss
+ * With Paint category posts
+ */
+
+.painting-images {
+  margin-top: $space;
+  max-width: $max-width;
+
+  .image-details {
+    margin: $space-one-fourth 0 0;
+    padding: 0;
+    li {
+      list-style-type: none;
+    }
+  }
+}

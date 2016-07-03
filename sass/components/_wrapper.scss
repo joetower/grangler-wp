@@ -8,7 +8,4 @@
   margin: 0 auto;
   max-width: $grid-width;
   padding: $space;
-  &:empty {
-    display: none;
-  }
 }

@@ -9,6 +9,14 @@
   background-color:$gray-lightest;
   font-weight: $sans-regular;
 
+  .post.full & {
+    padding-top: $space;
+
+    @include breakpoint($large) {
+      padding-top: $space-double;
+    }
+  }
+
   .byline {
     display: block;
 

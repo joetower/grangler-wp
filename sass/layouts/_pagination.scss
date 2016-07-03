@@ -1,0 +1,26 @@
+/**
+ * @file /components/_nav-links.scss
+ * Nav Links
+ */
+.pagination {
+  @include flexbox();
+  @include flex-direction(row);
+  @include justify-content(space-around);
+  @include align-items(center);
+  @include align-content(flex-start);
+  width: 100%;
+
+  .nav-links {
+    @include flexbox();
+    @include flex-direction(row);
+  }
+  .page-numbers {
+    @include flexbox();
+    @include flex(1 auto);
+  }
+  .current,
+  a {
+    @include flexbox();
+    @include flex(1 auto);
+  }
+}

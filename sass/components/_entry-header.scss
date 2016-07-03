@@ -1,0 +1,14 @@
+/**
+ * @file /components/_entry-header.scss
+ * Entry Header
+ */
+
+.entry-header {
+  .post.full & {
+    padding-top: $space;
+
+    @include breakpoint($large) {
+      padding-top: $space;
+    }
+  }
+}

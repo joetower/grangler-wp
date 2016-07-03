@@ -9,29 +9,21 @@
 
 figcaption {
   @include clearfix();
+  @include font-size(1.4);
+
   display: block;
-  border-top: $border-width solid $gray;
+  border-top: $border-width solid $gray-mid;
   padding: $space-one-third $space-one-half;
   background-color: $gray-lightest;
-
+  font-weight: $sans-bold;
+  color:$brown;
   cite {
+    @include font-size(1.4);
     font-weight: $sans-bold;
   }
   span {
+    @include font-size(1.2);
     display: block;
-
-    &.credit {
-      padding-top: $space-one-sixth;
-    }
-    &.source,
-    &.copyright {
-      display: inline-block;
-      padding-top: $space-one-sixth;
-    }
-    &.source + .copyright {
-      &:before {
-        content: "/";
-      }
-    }
+    vertical-align: middle;
   }
 }

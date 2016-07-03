@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  @include font-size(1.6);
+  @include font-size(1.8);
 }
 // paragraphs
 p {
@@ -58,7 +58,7 @@ h1,
     margin: 0;
   }
   @include breakpoint($large) {
-    @include font-size(3.6);
+    @include font-size(4);
     max-width: $max-width;
   }
 }
@@ -163,13 +163,6 @@ table {
 figcaption {
   line-height: 1.5;
   vertical-align: middle;
-  cite {
-    @include font-size(1.4);
-  }
-  span {
-    @include font-size(1.2);
-    vertical-align: middle;
-  }
 }
 
 // quotes
