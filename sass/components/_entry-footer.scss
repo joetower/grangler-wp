@@ -4,41 +4,73 @@
  */
 
 .entry-footer {
+  @include font-size(1.4);
+  color: $gray;
   background-color:$gray-lightest;
-  font-weight: $sans-bold;
+  font-weight: $sans-regular;
 
   .byline {
     display: block;
-    margin-bottom: $space-one-half;
+
+    @include breakpoint($small-medium) {
+      display:inline-block;
+      width: 50%;
+      float: left;
+    }
+    @include breakpoint($large) {
+      display:block;
+      margin-bottom: $space-one-half;
+      padding-bottom: $space-one-half;
+      border-bottom: 1px solid $gray-mid;
+      width: auto;
+      float: none;
+    }
 
     .author {
-      display: inline-block;
+      display: block;
 
       .photo {
-        display: inline-block;
+        display:inline-block;
         clip-path: circle(25px at center);
-      }
-      a {
-        padding: 0 $space-one-third;
+
+        @include breakpoint($large) {
+          display:block;
+          margin: 0 auto;
+        }
       }
     }
   }
 
   .meta {
-    display:block;
-    margin-bottom: $space-one-half;
-    .categories {
-      display: block;
+    display: block;
+
+    @include breakpoint($small-medium) {
+      display:inline-block;
+      width: 50%;
+    }
+    @include breakpoint($large) {
+      display:block;
+      width: auto;
     }
     .posted-on {
+      display: block;
+      margin-bottom: $space-one-half;
+      padding-bottom: $space-one-half;
+      border-bottom: 1px solid $gray-mid;
+    }
+    .categories {
+      display: block;
+      + .tags {
+        padding-top: $space-one-fourth;
+      }
+    }
+    .tags {
       display: block;
     }
   }
   .comments-link {
     display: inline-block;
-    a {
-      padding: 0 $space-one-third;
-    }
+
     @include breakpoint($large) {
       display: block;
       a {
@@ -50,9 +82,13 @@
 
   .edit-link {
     display: block;
-    a {
+    margin-top: $space;
+
+    a.post-edit-link {
+      @extend %button;
+      @extend %btn-secondary;
+      @extend %btn-small;
       display: block;
-      padding: $space-one-third;
     }
   }
   .updated:not(.published) {

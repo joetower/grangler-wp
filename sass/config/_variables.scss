@@ -22,8 +22,18 @@ $base-font-size:62.5%;
 // Primary
 
 $orange: #E06D06;
-$orange-muted: #A36E00;
-$yellow: #E3B23C;
+$orange-dark: #A36E00;
+$orange-mid: #F98B29;
+$orange-light: #F9963D;
+$orange-lighter: #FCCCA1;
+$orange-lightest: #FEF1E6;
+
+$orange-ash: #E3B23C;
+$orange-ash-dark: #B28519;
+$orange-ash-mid: #DEA620;
+$orange-ash-light: #EBCA79;
+
+$yellow:#DDE000;
 
 $brown-light: #867C1C;
 $brown-lighter: #D4C534;
@@ -31,7 +41,11 @@ $brown-lightest: #F2EEC3;
 $brown: #433E0E;
 $brown-mid-dark: #766D18;
 $brown-dark: #211F07;
+
 $cream: #DFD6A7;
+$cream-light: #EBE6CA;
+$cream-lighter: #F4F1E1;
+$cream-lightest: #F9F8F0;
 
 $red: #E94F37;
 $red-dark: #9C2311;
@@ -49,7 +63,7 @@ $green-dark: #253D00;
 $gray: #393E41;
 $gray-light: #D3D6D8;
 $gray-lighter: #C3C7CA;
-$gray-lightest: #F6F7EB;
+$gray-lightest: #F4F4F5;
 $gray-mid:#474D51;
 $gray-mid-dark:#2A2E30;
 $gray-dark: #26292B;

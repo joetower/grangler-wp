@@ -1,0 +1,29 @@
+/**
+ * @file /components/_widget-area.scss
+ * Widget area
+ */
+
+.widget-area {
+  ul {
+    padding: 0;
+    margin: 0;
+    li {
+      display: block;
+      list-style-type: none;
+      a,
+      a:link,
+      a:visited {
+        display: inline-block;
+        font-weight: $sans-bold;
+        color: $brown;
+        border-bottom: $border-width solid $yellow;
+        padding: $space-one-fourth;
+        &:hover {
+          color: $brown-dark;
+          border-color: $cream;
+          background-color: $cream-lightest;
+        }
+      }
+    }
+  }
+}

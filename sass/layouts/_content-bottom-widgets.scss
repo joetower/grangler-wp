@@ -29,14 +29,6 @@
       @include breakpoint ($small-medium) {
         @include flex(0 1 50%);
       }
-      &.widget_recent_entries {
-        background-color: $orange;
-        color: $white;
-      }
-      &.widget_categories {
-        background-color: $yellow;
-        color: $white;
-      }
     }
   }
 }
