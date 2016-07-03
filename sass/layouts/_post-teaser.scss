@@ -28,8 +28,12 @@
       @include flex(1 auto);
       background-color: $green;
 
+      @include breakpoint($smaller) {
+        margin-bottom: $space-one-half;
+      }
       @include breakpoint($medium) {
         @include flex(0 1 30%);
+        margin-bottom: 0;
       }
       img {
         width: 100%;

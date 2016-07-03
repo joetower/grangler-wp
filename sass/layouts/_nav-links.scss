@@ -1,0 +1,34 @@
+/**
+ * @file /components/_nav-links.scss
+ * Nav Links
+ */
+
+.nav-links {
+  @include flexbox();
+  @include flex-wrap(wrap);
+  @include flex-direction(column);
+  @include justify-content(flex-start);
+  @include align-items(stretch);
+  @include align-content(flex-start);
+  width: 100%;
+
+  @include breakpoint($medium) {
+    @include flex-direction(row);
+  }
+  .nav-next,
+  .nav-previous {
+    @include flexbox();
+    @include flex(1 auto);
+    @include breakpoint($medium) {
+      @include flex(1 1 50%);
+    }
+  }
+  a {
+    @include flexbox();
+    @include flex(1 auto);
+
+    @include breakpoint($medium) {
+      @include flex(1 1 50%);
+    }
+  }
+}

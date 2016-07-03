@@ -1,0 +1,9 @@
+/**
+ * @file /layouts/_post-navigation.scss
+ * Post Navigation
+ */
+
+.post-navigation {
+  @include clearfix();
+  width: 100%;
+}
