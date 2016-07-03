@@ -4,15 +4,17 @@
  */
 
 .comments-area {
-  @include clearfix();
-  clear: both;
+  @include flexbox();
+  @include flex-wrap(wrap);
+  @include align-items(center);
+  @include justify-content(space-around);
+  @include align-content(flex-start);
   background-color: $cream-lighter;
 
   .comment-respond {
-    @extend %wrapper;
-    @include clearfix();
+    @include flex(1 auto);
+
     padding: $space;
     margin-top: $space;
-    clear: both;
   }
 }

@@ -29,6 +29,9 @@
     .author {
       display: block;
 
+      @include breakpoint($large) {
+        text-align: center;
+      }
       .photo {
         display:inline-block;
         clip-path: circle(25px at center);
@@ -60,12 +63,14 @@
     }
     .categories {
       display: block;
+      text-transform: lowercase;
       + .tags {
         padding-top: $space-one-fourth;
       }
     }
     .tags {
       display: block;
+      text-transform: lowercase;
     }
   }
   .comments-link {

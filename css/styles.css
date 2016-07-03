@@ -668,8 +668,7 @@ footer .site-info,
 .post .entry-footer,
 .post.teaser.type-post .entry-header,
 .post.teaser.type-post .entry-content,
-.post.teaser.type-post .entry-footer,
-.comments-area .comment-respond {
+.post.teaser.type-post .entry-footer {
   margin: 0 auto;
   max-width: 1050px;
   padding: 30px; }
@@ -680,8 +679,7 @@ footer .site-info,
   .post .entry-footer:empty,
   .post.teaser.type-post .entry-header:empty,
   .post.teaser.type-post .entry-content:empty,
-  .post.teaser.type-post .entry-footer:empty,
-  .comments-area .comment-respond:empty {
+  .post.teaser.type-post .entry-footer:empty {
     display: none; }
 
 /**
@@ -1041,6 +1039,9 @@ article {
         float: none; } }
     .entry-footer .byline .author {
       display: block; }
+      @media (min-width: 64em) {
+        .entry-footer .byline .author {
+          text-align: center; } }
       .entry-footer .byline .author .photo {
         display: inline-block;
         -webkit-clip-path: circle(25px at center);
@@ -1065,11 +1066,13 @@ article {
       padding-bottom: 15px;
       border-bottom: 1px solid #474D51; }
     .entry-footer .meta .categories {
-      display: block; }
+      display: block;
+      text-transform: lowercase; }
       .entry-footer .meta .categories + .tags {
         padding-top: 7.5px; }
     .entry-footer .meta .tags {
-      display: block; }
+      display: block;
+      text-transform: lowercase; }
   .entry-footer .comments-link {
     display: inline-block; }
     @media (min-width: 64em) {
@@ -1640,6 +1643,21 @@ form.search .form-actions,
     .nav-links .nav-previous a:visited:hover {
       background-color: #000; }
 
+/**
+ * @file /components/_painting-details.scss
+ * Painting Details
+ */
+.painting-details {
+  display: inline-block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 6px solid #C3C7CA; }
+  .painting-details span {
+    display: inline-block; }
+  .painting-details span:not(:last-child) {
+    padding-right: 15px; }
+
 /*
 //////////////////////////////
 // Layouts
@@ -2115,16 +2133,29 @@ footer .social {
  * Comments Area Layout
  */
 .comments-area {
-  overflow: hidden;
-  *zoom: 1;
-  clear: both;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -moz-align-items: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  -moz-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
   background-color: #F4F1E1; }
   .comments-area .comment-respond {
-    overflow: hidden;
-    *zoom: 1;
+    -moz-flex: 1 auto;
+    -ms-flex: 1 auto;
+    -webkit-box-flex: 1;
+            flex: 1 auto;
     padding: 30px;
-    margin-top: 30px;
-    clear: both; }
+    margin-top: 30px; }
 
 /**
  * @file /layouts/_content-bottom-widgets.scss

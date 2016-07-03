@@ -1,0 +1,19 @@
+/**
+ * @file /components/_painting-details.scss
+ * Painting Details
+ */
+
+.painting-details {
+  display: inline-block;
+  margin-top: $space-one-half;
+  margin-bottom: $space-one-half;
+  padding: $space-one-half;
+  border: $border-width solid $gray-lighter;
+
+  span {
+    display: inline-block;
+  }
+  span:not(:last-child) {
+    padding-right: $space-one-half;
+  }
+}

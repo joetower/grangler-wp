@@ -19,6 +19,9 @@
 				<?php the_title( '<h1 class="post-title">', '</h1>' ); ?>
 			</header><!-- .entry-header -->
 
+			<?php get_template_part( 'template-parts/with-paint-details' ); ?>
+			<?php get_template_part( 'template-parts/design-assets' ); ?>
+			
 			<?php
 				the_content();
 
@@ -39,7 +42,6 @@
 			<?php get_template_part( 'template-parts/album-entry' ); ?>
 
 		</div><!-- .entry-content -->
-
 		<?php get_template_part( 'template-parts/entry-footer' ); ?>
 
 </article><!-- #post-## -->
