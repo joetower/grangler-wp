@@ -14,7 +14,7 @@
       <em>This entry was posted on</em> <?php the_time('l, F jS, Y') ?>
     </span>
     <span class="categories">
-      <em>Posted in: </em> <?php the_category(' | ') ?>
+      <em>Posted in: </em> <?php the_category(', ') ?>
     </span>
     <span class="tags">
       <?php the_tags(' <em>Tagged:</em> ') ?>

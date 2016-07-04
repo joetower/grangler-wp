@@ -22,7 +22,7 @@
 			<?php get_template_part( 'template-parts/with-paint-images' ); ?>
 			<?php get_template_part( 'template-parts/with-paint-details' ); ?>
 
-			<?php get_template_part( 'template-parts/design-assets' ); ?>
+			<?php get_template_part( 'template-parts/design-asset-download' ); ?>
 
 			<?php
 				the_content();
@@ -41,9 +41,12 @@
 				}
 			?>
 
+			<?php get_template_part( 'template-parts/design-asset-images' ); ?>
 			<?php get_template_part( 'template-parts/album-entry' ); ?>
+			<?php get_template_part( 'template-parts/design-asset-about' ); ?>
 
 		</div><!-- .entry-content -->
+		
 		<?php get_template_part( 'template-parts/entry-footer' ); ?>
 
 </article><!-- #post-## -->

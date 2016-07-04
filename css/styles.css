@@ -1642,7 +1642,7 @@ form.search .form-actions,
 
 /**
  * @file /components/_design-asset.scss
- * Design assets
+ * Design assets: downloads
  */
 .design-asset {
   display: inline-block;
@@ -1664,6 +1664,37 @@ form.search .form-actions,
     font-size: 1.4rem;
     font-style: italic;
     margin-top: 15px; }
+
+/**
+ * @file /components/_design-brief.scss
+ * Design assets: design brief
+ */
+.design-brief {
+  font-size: 18px;
+  font-size: 1.8rem;
+  padding: 30px 0; }
+
+/**
+ * @file /components/_design-details.scss
+ * Design assets: details
+ */
+.design-details {
+  padding: 30px 0; }
+
+/**
+ * @file /components/_design-images.scss
+ * Design assets: images
+ */
+.design-images {
+  margin-top: 30px;
+  max-width: 720px; }
+  .design-images .image-details {
+    margin: 7.5px 0 0;
+    padding: 0; }
+    .design-images .image-details li {
+      list-style-type: none; }
+      .design-images .image-details li + li {
+        margin-top: 15px; }
 
 /**
  * @file /components/_with-paint.scss
