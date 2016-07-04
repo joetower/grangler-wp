@@ -13,7 +13,7 @@
     padding-top: $space;
 
     @include breakpoint($large) {
-      padding-top: $space-double;
+      padding-top: $space-double + $space;
     }
   }
 

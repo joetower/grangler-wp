@@ -34,7 +34,7 @@
       order: 2;
 
       @include breakpoint($large) {
-        @include flex(1 1 auto);
+        @include flex(1 1 75%);
         order: 3;
       }
     }
@@ -44,7 +44,7 @@
       order: 3;
 
       @include breakpoint($large) {
-        @include flex(0 0 250px);
+        @include flex(0 1 25%);
         order: 2;
       }
     }

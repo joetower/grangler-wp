@@ -6,9 +6,5 @@
 .entry-header {
   .post.full & {
     padding-top: $space;
-
-    @include breakpoint($large) {
-      padding-top: $space;
-    }
   }
 }
