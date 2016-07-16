@@ -19,18 +19,28 @@
 
     <li class="album">
       <div class="top-section">
+        <?php if( $cover ): ?>
           <figure>
             <img src="<?php echo $cover['url']; ?>" alt="<?php echo $cover['alt'] ?>" />
           </figure>
+        <?php endif; ?>
+        <?php if( $artist ): ?>
           <div class="album-content">
-            <span class="album-position"><?php echo $position; ?></span>
+            <?php if( $position ): ?>
+              <span class="album-position"><?php echo $position; ?></span>
+            <?php endif; ?>
             <h2 class="artist-name"><?php echo $artist; ?></h2>
             <h3 class="album-title"><?php echo $album; ?></h3>
           </div>
+        <?php endif; ?>
         </div>
         <?php echo $review; ?>
-        <?php echo $song; ?>
-        <em><?php echo $highlights; ?></em>
+        <?php if( $position ): ?>
+          <?php echo $position; ?>
+        <?php endif; ?>
+        <?php if( $highlights ): ?>
+          <em><?php echo $highlights; ?></em>
+        <?php endif; ?>
     </li>
 
   <?php endwhile; ?>

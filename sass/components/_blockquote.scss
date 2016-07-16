@@ -13,4 +13,11 @@ blockquote {
   max-width: $max-width;
   background-size: 34px;
   background-position: left 50%;
+
+  cite {
+    @include font-size(1.4);
+    display: block;
+    margin-top: $space-one-half;
+    color: $gray-mid;
+  }
 }
