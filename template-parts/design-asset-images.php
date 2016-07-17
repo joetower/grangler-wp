@@ -1,6 +1,7 @@
+<?php if( have_rows('design_images') ): ?>
+
 <section class="design-images">
-  <?php if( have_rows('design_images') ): ?>
-  <ul class="image-details">
+  <ul class="image-stack image-details">
     <?php while( have_rows('design_images') ): the_row();
 
       $designImage = get_sub_field('design_image');
@@ -23,5 +24,5 @@
     </li>
   <?php endwhile; ?>
   </ul>
-  <?php endif; ?>
 </section>
+<?php endif; ?>

@@ -41,12 +41,13 @@
 				}
 			?>
 
+			<?php get_template_part( 'template-parts/photo-group' ); ?>
 			<?php get_template_part( 'template-parts/design-asset-images' ); ?>
 			<?php get_template_part( 'template-parts/album-entry' ); ?>
 			<?php get_template_part( 'template-parts/design-asset-about' ); ?>
 
 		</div><!-- .entry-content -->
-		
+
 		<?php get_template_part( 'template-parts/entry-footer' ); ?>
 
 </article><!-- #post-## -->

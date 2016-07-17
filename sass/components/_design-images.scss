@@ -6,15 +6,4 @@
 .design-images {
   margin-top: $space;
   max-width: $max-width;
-
-  .image-details {
-    margin: $space-one-fourth 0 0;
-    padding: 0;
-    li {
-      list-style-type: none;
-      + li {
-        margin-top: $space-one-half;
-      }
-    }
-  }
 }

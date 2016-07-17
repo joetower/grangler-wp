@@ -1,0 +1,20 @@
+/**
+ * @file /components/_photo-group.scss
+ * Photo group sections
+ */
+.photo-group {
+  margin-top: $space-double;
+  max-width: $max-width;
+
+  .photo-collection {
+    padding: $space 0;
+  }
+  .photo-content {
+    padding: $space;
+    background-color: $cream-light;
+
+    + .photo-content {
+      margin-top: $space-one-half;
+    }
+  }
+}

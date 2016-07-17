@@ -1694,13 +1694,6 @@ form.search .form-actions,
 .design-images {
   margin-top: 30px;
   max-width: 720px; }
-  .design-images .image-details {
-    margin: 7.5px 0 0;
-    padding: 0; }
-    .design-images .image-details li {
-      list-style-type: none; }
-      .design-images .image-details li + li {
-        margin-top: 15px; }
 
 /**
  * @file /components/_with-paint.scss
@@ -1709,11 +1702,6 @@ form.search .form-actions,
 .painting-images {
   margin-top: 30px;
   max-width: 720px; }
-  .painting-images .image-details {
-    margin: 7.5px 0 0;
-    padding: 0; }
-    .painting-images .image-details li {
-      list-style-type: none; }
 
 /**
  * @file /components/_pagination.scss
@@ -1739,6 +1727,33 @@ form.search .form-actions,
     .pagination a:visited:hover {
       background-color: #89E000;
       color: #253D00; }
+
+/**
+ * @file /components/_image-stack.scss
+ * DImage stack partial
+ */
+.image-stack {
+  margin: 7.5px 0 0;
+  padding: 0; }
+  .image-stack li {
+    list-style-type: none; }
+    .image-stack li + li {
+      margin-top: 30px; }
+
+/**
+ * @file /components/_photo-group.scss
+ * Photo group sections
+ */
+.photo-group {
+  margin-top: 60px;
+  max-width: 720px; }
+  .photo-group .photo-collection {
+    padding: 30px 0; }
+  .photo-group .photo-content {
+    padding: 30px;
+    background-color: #EBE6CA; }
+    .photo-group .photo-content + .photo-content {
+      margin-top: 15px; }
 
 /*
 //////////////////////////////

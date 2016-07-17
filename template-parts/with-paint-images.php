@@ -15,7 +15,7 @@
     <?php endif; ?>
 
     <?php if( have_rows('painting_detail_images') ): ?>
-    <ul class="image-details">
+    <ul class="image-stack image-details">
       <?php while( have_rows('painting_detail_images') ): the_row();
 
         $paintingDetailImage = get_sub_field('painting_detail_image');

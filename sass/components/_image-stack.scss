@@ -1,0 +1,15 @@
+/**
+ * @file /components/_image-stack.scss
+ * DImage stack partial
+ */
+
+.image-stack {
+  margin: $space-one-fourth 0 0;
+  padding: 0;
+  li {
+    list-style-type: none;
+    + li {
+      margin-top: $space;
+    }
+  }
+}
