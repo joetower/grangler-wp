@@ -7,6 +7,7 @@ header {
   &.site-header {
   padding: $space-one-half;
   color: $gray-mid;
+  background-color: $pink;
 
     @include breakpoint($large) {
       padding: $space+$space-one-half $space-one-half;

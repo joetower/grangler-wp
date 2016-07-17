@@ -683,7 +683,8 @@ footer .site-info,
  */
 header.site-header {
   padding: 15px;
-  color: #474D51; }
+  color: #474D51;
+  background-color: #EE7D6B; }
   @media (min-width: 64em) {
     header.site-header {
       padding: 45px 15px; } }
