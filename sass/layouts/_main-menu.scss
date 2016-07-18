@@ -8,10 +8,11 @@
   ul.menu {
     @include flexbox();
     @include flex-wrap(wrap);
-    @include flex(0 1 100%);
+    @include flex(0 0 auto);
     @include justify-content(flex-start);
     @include align-items(stretch);
     @include align-content(stretch);
+    width: 100%;
 
     @include breakpoint($large) {
       @include align-items(flex-start);
@@ -21,21 +22,21 @@
   li {
     @include flexbox();
     @include flex-wrap(wrap);
-    @include flex(1 0 25%);
+    @include flex(0 0 auto);
+    width: 25%;
 
     @include breakpoint($medium) {
-      @include flex(1 0 16.666%);
+      width: 25%;
     }
     @include breakpoint($large) {
-      @include flex(1 0 auto);
+      width: auto;
     }
     button {
       width: 100%;
     }
     a {
-      @include flex(1 1 15%);
-      display: inline-block; /* non-flexbox browsers */
       margin: 0;
+      width: auto;
 
       @include breakpoint($large) {
         @include flex(1 auto);

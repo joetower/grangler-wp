@@ -8,15 +8,11 @@
     @include flexbox();
     @include flex(1 auto);
     @include breakpoint($medium) {
-      @include flex(1 1 50%);
+      width: 50%;
     }
   }
   a {
     @include flexbox();
     @include flex(1 auto);
-
-    @include breakpoint($medium) {
-      @include flex(1 1 50%);
-    }
   }
 }

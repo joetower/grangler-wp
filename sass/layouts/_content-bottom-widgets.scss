@@ -23,13 +23,13 @@
     @include flex(1 auto);
 
     @include breakpoint ($small-medium) {
-      @include flex(1 1 50%);
+      width: 50%;
     }
     section {
       @include flex(1 auto);
 
       @include breakpoint ($small-medium) {
-        @include flex(1 1 50%);
+        width: 50%;
       }
     }
   }

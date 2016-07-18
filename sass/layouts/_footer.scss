@@ -23,7 +23,7 @@ footer {
     }
   }
   .social {
-    @include flex(1 100%);
+    @include flex(0 0 auto);
     @include flexbox();
     @include flex-wrap(wrap);
     @include justify-content(center);
@@ -31,6 +31,7 @@ footer {
     @include align-content(flex-start);
     margin: $space 0 0;
     padding: 0;
+    width: 100%;
 
     li {
       @include flexbox();
