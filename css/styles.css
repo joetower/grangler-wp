@@ -684,7 +684,7 @@ footer .site-info,
 header.site-header {
   padding: 15px;
   color: #474D51;
-  background-color: #EE7D6B; }
+  background-color: #26292B; }
   @media (min-width: 64em) {
     header.site-header {
       padding: 45px 15px; } }
@@ -1607,8 +1607,12 @@ form.search .form-actions,
     padding: 0 15px 0 0;
     font-style: italic;
     font-weight: 400; }
+  .nav-links .dots {
+    color: #FFFFFF; }
+  .nav-links .dots,
   .nav-links .post-title {
     font-weight: 700; }
+  .nav-links .dots,
   .nav-links .current,
   .nav-links a {
     padding: 30px 15px; }
@@ -1755,6 +1759,74 @@ form.search .form-actions,
     background-color: #EBE6CA; }
     .photo-group .photo-content + .photo-content {
       margin-top: 15px; }
+
+/**
+ * @file /components/_special-posts.scss
+ * Special posts
+ */
+.post-245 .post-thumbnail {
+  background: url(../img/post-assets/blake-body-repeat.jpg) no-repeat top center;
+  line-height: 0;
+  -webkit-animation-name: bg_special;
+  -webkit-animation-duration: 15s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: bg_special;
+  -moz-animation-duration: 15s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -webkit-animation-name: bg_special;
+          animation-name: bg_special;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear; }
+
+.state-of-tv {
+  background: url(/img/posts/state-of-tv/tv_bg.png) repeat top center;
+  line-height: 0;
+  -webkit-animation-name: bg_tv;
+  -webkit-animation-duration: .1s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: bg_tv;
+  -moz-animation-duration: .1s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -webkit-animation-name: bg_tv;
+          animation-name: bg_tv;
+  -webkit-animation-duration: .1s;
+          animation-duration: .1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear; }
+
+@-webkit-keyframes bg_special {
+  0% {
+    background-position: left top; }
+  100% {
+    background-position: right top; } }
+
+@keyframes bg_special {
+  0% {
+    background-position: left top; }
+  100% {
+    background-position: right top; } }
+
+@-webkit-keyframes bg_tv {
+  0% {
+    background-position: left top; }
+  100% {
+    background-position: right bottom; } }
+
+@keyframes bg_tv {
+  0% {
+    background-position: left top; }
+  100% {
+    background-position: right bottom; } }
 
 /*
 //////////////////////////////

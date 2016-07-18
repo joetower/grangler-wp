@@ -11,9 +11,14 @@
     font-style: italic;
     font-weight: $sans-regular;
   }
+  .dots {
+    color: $white;
+  }
+  .dots,
   .post-title {
     font-weight: $sans-bold;
   }
+  .dots,
   .current,
   a {
     padding: $space $space-one-half;
