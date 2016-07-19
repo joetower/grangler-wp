@@ -24,9 +24,13 @@
 
 .icon-add_circle-blueLight { background-image: url('png/add_circle-blueLight.png'); background-repeat: no-repeat; }
 
+.icon-add_circle-brown { background-image: url('png/add_circle-brown.png'); background-repeat: no-repeat; }
+
 .icon-add_circle-gray { background-image: url('png/add_circle-gray.png'); background-repeat: no-repeat; }
 
 .icon-add_circle-grayDark { background-image: url('png/add_circle-grayDark.png'); background-repeat: no-repeat; }
+
+.icon-add_circle-orange { background-image: url('png/add_circle-orange.png'); background-repeat: no-repeat; }
 
 .icon-add_circle-white { background-image: url('png/add_circle-white.png'); background-repeat: no-repeat; }
 
@@ -88,7 +92,6 @@
 
 .icon-block { background-image: url('png/block.png'); background-repeat: no-repeat; }
 
-.messages.success, .messages.status,
 .icon-check-black { background-image: url('png/check-black.png'); background-repeat: no-repeat; }
 
 .icon-check-blue { background-image: url('png/check-blue.png'); background-repeat: no-repeat; }
@@ -101,12 +104,10 @@
 
 .icon-check-grayDark { background-image: url('png/check-grayDark.png'); background-repeat: no-repeat; }
 
-.callout .check li,
 .icon-check-white { background-image: url('png/check-white.png'); background-repeat: no-repeat; }
 
 .icon-check-yellow { background-image: url('png/check-yellow.png'); background-repeat: no-repeat; }
 
-.check li,
 .icon-check { background-image: url('png/check.png'); background-repeat: no-repeat; }
 
 div:not(#foo) input[type="checkbox"]:checked + label,
@@ -121,6 +122,8 @@ div:not(#foo) input[type="checkbox"]:checked + label,
 .icon-check_box-gray { background-image: url('png/check_box-gray.png'); background-repeat: no-repeat; }
 
 .icon-check_box-grayDark { background-image: url('png/check_box-grayDark.png'); background-repeat: no-repeat; }
+
+.icon-check_box-green { background-image: url('png/check_box-green.png'); background-repeat: no-repeat; }
 
 .icon-check_box-white { background-image: url('png/check_box-white.png'); background-repeat: no-repeat; }
 
@@ -139,6 +142,8 @@ div:not(#foo) input[type="checkbox"]:checked + label,
 .icon-check_box_outline_blank-gray { background-image: url('png/check_box_outline_blank-gray.png'); background-repeat: no-repeat; }
 
 .icon-check_box_outline_blank-grayDark { background-image: url('png/check_box_outline_blank-grayDark.png'); background-repeat: no-repeat; }
+
+.icon-check_box_outline_blank-green { background-image: url('png/check_box_outline_blank-green.png'); background-repeat: no-repeat; }
 
 .icon-check_box_outline_blank-white { background-image: url('png/check_box_outline_blank-white.png'); background-repeat: no-repeat; }
 
@@ -177,6 +182,8 @@ div:not(#foo) input[type="checkbox"] + label,
 
 .icon-chevron_left-grayDark { background-image: url('png/chevron_left-grayDark.png'); background-repeat: no-repeat; }
 
+.icon-chevron_left-green { background-image: url('png/chevron_left-green.png'); background-repeat: no-repeat; }
+
 .icon-chevron_left-white { background-image: url('png/chevron_left-white.png'); background-repeat: no-repeat; }
 
 .icon-chevron_left-yellow { background-image: url('png/chevron_left-yellow.png'); background-repeat: no-repeat; }
@@ -194,6 +201,8 @@ div:not(#foo) input[type="checkbox"] + label,
 .icon-chevron_right-gray { background-image: url('png/chevron_right-gray.png'); background-repeat: no-repeat; }
 
 .icon-chevron_right-grayDark { background-image: url('png/chevron_right-grayDark.png'); background-repeat: no-repeat; }
+
+.icon-chevron_right-green { background-image: url('png/chevron_right-green.png'); background-repeat: no-repeat; }
 
 .icon-chevron_right-white { background-image: url('png/chevron_right-white.png'); background-repeat: no-repeat; }
 
@@ -263,9 +272,13 @@ div:not(#foo) input[type="checkbox"] + label,
 
 .icon-email-blueLight { background-image: url('png/email-blueLight.png'); background-repeat: no-repeat; }
 
+.icon-email-cream { background-image: url('png/email-cream.png'); background-repeat: no-repeat; }
+
 .icon-email-gray { background-image: url('png/email-gray.png'); background-repeat: no-repeat; }
 
 .icon-email-grayDark { background-image: url('png/email-grayDark.png'); background-repeat: no-repeat; }
+
+.icon-email-green { background-image: url('png/email-green.png'); background-repeat: no-repeat; }
 
 .icon-email-white { background-image: url('png/email-white.png'); background-repeat: no-repeat; }
 
@@ -285,7 +298,6 @@ div:not(#foo) input[type="checkbox"] + label,
 
 .icon-error-grayDark { background-image: url('png/error-grayDark.png'); background-repeat: no-repeat; }
 
-.messages.error,
 .icon-error-white { background-image: url('png/error-white.png'); background-repeat: no-repeat; }
 
 .icon-error-yellow { background-image: url('png/error-yellow.png'); background-repeat: no-repeat; }
@@ -322,19 +334,18 @@ div:not(#foo) input[type="checkbox"] + label,
 
 .icon-expand_less-grayDark { background-image: url('png/expand_less-grayDark.png'); background-repeat: no-repeat; }
 
-.sub-menu li.menu-item--expanded > a.is-active, .sub-menu li.menu-item--expanded > a.is-active, .sub-menu li.menu-item--expanded > a.is-active:hover, .menu-open .submenu-icon,
+.icon-expand_less-green { background-image: url('png/expand_less-green.png'); background-repeat: no-repeat; }
+
 .icon-expand_less-white { background-image: url('png/expand_less-white.png'); background-repeat: no-repeat; }
 
 .icon-expand_less-yellow { background-image: url('png/expand_less-yellow.png'); background-repeat: no-repeat; }
 
 .icon-expand_less { background-image: url('png/expand_less.png'); background-repeat: no-repeat; }
 
-.submenu-icon,
 .icon-expand_more-black { background-image: url('png/expand_more-black.png'); background-repeat: no-repeat; }
 
 .icon-expand_more-blue { background-image: url('png/expand_more-blue.png'); background-repeat: no-repeat; }
 
-.sub-menu li.menu-item--collapsed > a,
 .icon-expand_more-blueDark { background-image: url('png/expand_more-blueDark.png'); background-repeat: no-repeat; }
 
 .icon-expand_more-blueLight { background-image: url('png/expand_more-blueLight.png'); background-repeat: no-repeat; }
@@ -343,7 +354,8 @@ div:not(#foo) input[type="checkbox"] + label,
 
 .icon-expand_more-grayDark { background-image: url('png/expand_more-grayDark.png'); background-repeat: no-repeat; }
 
-.sub-menu li.menu-item--collapsed > a:hover, .sub-menu li.menu-item--expanded > a, .sub-menu li.menu-item--expanded > a:hover,
+.icon-expand_more-green { background-image: url('png/expand_more-green.png'); background-repeat: no-repeat; }
+
 .icon-expand_more-white { background-image: url('png/expand_more-white.png'); background-repeat: no-repeat; }
 
 .icon-expand_more-yellow { background-image: url('png/expand_more-yellow.png'); background-repeat: no-repeat; }
@@ -362,7 +374,6 @@ div:not(#foo) input[type="checkbox"] + label,
 
 .icon-facebook-grayDark { background-image: url('png/facebook-grayDark.png'); background-repeat: no-repeat; }
 
-.facebook,
 .icon-facebook-white { background-image: url('png/facebook-white.png'); background-repeat: no-repeat; }
 
 .icon-facebook-yellow { background-image: url('png/facebook-yellow.png'); background-repeat: no-repeat; }
@@ -380,6 +391,8 @@ div:not(#foo) input[type="checkbox"] + label,
 .icon-file_download-gray { background-image: url('png/file_download-gray.png'); background-repeat: no-repeat; }
 
 .icon-file_download-grayDark { background-image: url('png/file_download-grayDark.png'); background-repeat: no-repeat; }
+
+.icon-file_download-green { background-image: url('png/file_download-green.png'); background-repeat: no-repeat; }
 
 .icon-file_download-white { background-image: url('png/file_download-white.png'); background-repeat: no-repeat; }
 
@@ -417,11 +430,13 @@ div:not(#foo) input[type="checkbox"] + label,
 
 .icon-format_quote-grayDark { background-image: url('png/format_quote-grayDark.png'); background-repeat: no-repeat; }
 
+blockquote,
+.icon-format_quote-orange { background-image: url('png/format_quote-orange.png'); background-repeat: no-repeat; }
+
 .icon-format_quote-white { background-image: url('png/format_quote-white.png'); background-repeat: no-repeat; }
 
 .icon-format_quote-yellow { background-image: url('png/format_quote-yellow.png'); background-repeat: no-repeat; }
 
-blockquote,
 .icon-format_quote-yellowMidDark { background-image: url('png/format_quote-yellowMidDark.png'); background-repeat: no-repeat; }
 
 .icon-format_quote { background-image: url('png/format_quote.png'); background-repeat: no-repeat; }
@@ -438,7 +453,6 @@ blockquote,
 
 .icon-instagram-grayDark { background-image: url('png/instagram-grayDark.png'); background-repeat: no-repeat; }
 
-.instagram,
 .icon-instagram-white { background-image: url('png/instagram-white.png'); background-repeat: no-repeat; }
 
 .icon-instagram-yellow { background-image: url('png/instagram-yellow.png'); background-repeat: no-repeat; }
@@ -583,7 +597,6 @@ blockquote,
 
 .icon-pinterest-grayDark { background-image: url('png/pinterest-grayDark.png'); background-repeat: no-repeat; }
 
-.pinterest,
 .icon-pinterest-white { background-image: url('png/pinterest-white.png'); background-repeat: no-repeat; }
 
 .icon-pinterest-yellow { background-image: url('png/pinterest-yellow.png'); background-repeat: no-repeat; }
@@ -644,7 +657,6 @@ blockquote,
 
 .icon-print { background-image: url('png/print.png'); background-repeat: no-repeat; }
 
-div:not(#foo) input[type="radio"]:checked + label,
 .icon-radio_button_checked-black { background-image: url('png/radio_button_checked-black.png'); background-repeat: no-repeat; }
 
 .icon-radio_button_checked-blue { background-image: url('png/radio_button_checked-blue.png'); background-repeat: no-repeat; }
@@ -656,6 +668,8 @@ div:not(#foo) input[type="radio"]:checked + label,
 .icon-radio_button_checked-gray { background-image: url('png/radio_button_checked-gray.png'); background-repeat: no-repeat; }
 
 .icon-radio_button_checked-grayDark { background-image: url('png/radio_button_checked-grayDark.png'); background-repeat: no-repeat; }
+
+.icon-radio_button_checked-green { background-image: url('png/radio_button_checked-green.png'); background-repeat: no-repeat; }
 
 .icon-radio_button_checked-white { background-image: url('png/radio_button_checked-white.png'); background-repeat: no-repeat; }
 
@@ -675,11 +689,12 @@ div:not(#foo) input[type="radio"]:checked + label,
 
 .icon-radio_button_unchecked-grayDark { background-image: url('png/radio_button_unchecked-grayDark.png'); background-repeat: no-repeat; }
 
+.icon-radio_button_unchecked-green { background-image: url('png/radio_button_unchecked-green.png'); background-repeat: no-repeat; }
+
 .icon-radio_button_unchecked-white { background-image: url('png/radio_button_unchecked-white.png'); background-repeat: no-repeat; }
 
 .icon-radio_button_unchecked-yellow { background-image: url('png/radio_button_unchecked-yellow.png'); background-repeat: no-repeat; }
 
-div:not(#foo) input[type="radio"] + label,
 .icon-radio_button_unchecked { background-image: url('png/radio_button_unchecked.png'); background-repeat: no-repeat; }
 
 .icon-remove_circle-black { background-image: url('png/remove_circle-black.png'); background-repeat: no-repeat; }
@@ -712,6 +727,8 @@ input.form-search,
 .icon-search-gray { background-image: url('png/search-gray.png'); background-repeat: no-repeat; }
 
 .icon-search-grayDark { background-image: url('png/search-grayDark.png'); background-repeat: no-repeat; }
+
+.icon-search-green { background-image: url('png/search-green.png'); background-repeat: no-repeat; }
 
 .icon-search-white { background-image: url('png/search-white.png'); background-repeat: no-repeat; }
 
@@ -749,14 +766,12 @@ input.form-search,
 
 .icon-twitter-grayDark { background-image: url('png/twitter-grayDark.png'); background-repeat: no-repeat; }
 
-.twitter,
 .icon-twitter-white { background-image: url('png/twitter-white.png'); background-repeat: no-repeat; }
 
 .icon-twitter-yellow { background-image: url('png/twitter-yellow.png'); background-repeat: no-repeat; }
 
 .icon-twitter { background-image: url('png/twitter.png'); background-repeat: no-repeat; }
 
-.messages.warning,
 .icon-warning-black { background-image: url('png/warning-black.png'); background-repeat: no-repeat; }
 
 .icon-warning-blue { background-image: url('png/warning-blue.png'); background-repeat: no-repeat; }
