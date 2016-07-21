@@ -1784,8 +1784,8 @@ form.search .form-actions,
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear; }
 
-.state-of-tv {
-  background: url(/img/posts/state-of-tv/tv_bg.png) repeat top center;
+.post-272 .post-thumbnail {
+  background: url(../img/post-assets/tv_bg.png) repeat top center;
   line-height: 0;
   -webkit-animation-name: bg_tv;
   -webkit-animation-duration: .1s;
@@ -2268,7 +2268,7 @@ footer .social {
                 flex-direction: row;
         width: 100%; } }
     .post.teaser.type-post a:hover {
-      background-color: #64A300;
+      background-color: #DBFEA3;
       color: #253D00; }
       .post.teaser.type-post a:hover img {
         -webkit-filter: saturate(0%);
