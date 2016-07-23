@@ -1863,13 +1863,10 @@ form.search .form-actions,
  * Comments Area Design
  */
 .comments-area {
-  background-color: #D4C534;
-  border-top: 6px solid #D4C534;
-  border-bottom: 6px solid #D4C534; }
+  background-color: #64A300; }
   .comments-area.open {
-    background-color: #211F07;
-    color: #FFFFFF;
-    border-color: #433E0E; }
+    background-color: #000;
+    color: #FFFFFF; }
   .comments-area .comment-respond {
     padding: 30px; }
 

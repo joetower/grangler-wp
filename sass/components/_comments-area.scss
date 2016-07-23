@@ -3,13 +3,11 @@
  * Comments Area Design
  */
 .comments-area {
-  background-color: $brown-lighter;
-  border-top: $border-width solid $brown-lighter;
-  border-bottom: $border-width solid $brown-lighter;
+  background-color: $green;
+
   &.open {
-    background-color: $brown-dark;
+    background-color: $black;
     color: $white;
-    border-color: $brown;
   }
   .comment-respond {
     padding: $space;
