@@ -11,6 +11,19 @@ if ( function_exists( 'add_theme_support' ) ) {
     add_image_size( 'teaser-square-large', 500, 500, true ); //300 square pixels cropped
 
 }
+
+// add theme js
+
+function scripts_with_jquery() {
+    // Register the script like this for a theme:
+    wp_register_script( 'custom-script', get_stylesheet_directory_uri() . '/js/scripts.min.js', array( 'jquery' ) );
+
+    // For either a plugin or a theme, you can then enqueue the script:
+    wp_enqueue_script( 'custom-script' );
+}
+add_action( 'wp_enqueue_scripts', 'scripts_with_jquery' );
+
+
 // custom except function
 
 function excerpt($limit) {

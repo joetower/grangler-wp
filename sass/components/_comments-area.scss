@@ -1,0 +1,17 @@
+/**
+ * @file /components/_comments-area.scss
+ * Comments Area Design
+ */
+.comments-area {
+  background-color: $brown-lighter;
+  border-top: $border-width solid $brown-lighter;
+  border-bottom: $border-width solid $brown-lighter;
+  &.open {
+    background-color: $brown-dark;
+    color: $white;
+    border-color: $brown;
+  }
+  .comment-respond {
+    padding: $space;
+  }
+}

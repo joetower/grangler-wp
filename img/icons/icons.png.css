@@ -334,6 +334,7 @@ div:not(#foo) input[type="checkbox"] + label,
 
 .icon-expand_less-grayDark { background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUBAMAAAB/pwA+AAAAKlBMVEUAAAAAAAA2NjYyMjI0NDQyMjIyMjIyMjIzMzMxMTEyMjIxMTEzMzMzMzOtSB9zAAAADXRSTlMAAQ44On1/hIWHiLnHml1cVgAAADNJREFUCNdjYKAKYFKAM3UOwQXP3oEJ61zvPQQTLJSECnNfF2BcuwHMZAlkYBAzYKAuAAB+ZwpuqsfZHgAAAABJRU5ErkJggg=='); background-repeat: no-repeat; }
 
+.comment-reply-title.open,
 .icon-expand_less-green { background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUBAMAAAB/pwA+AAAAKlBMVEUAAAAA/wBbowBkowBlogBjowBkogBkogBjoQBkogBjowBkogBioQBkowCyw1yPAAAADXRSTlMAAQ44On1/hIWHiLnHml1cVgAAADNJREFUCNdjYKAKYFKAM3UOwQXP3oEJ61zvPQQTLJSECnNfF2BcuwHMZAlkYBAzYKAuAAB+ZwpuqsfZHgAAAABJRU5ErkJggg=='); background-repeat: no-repeat; }
 
 .icon-expand_less-white { background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUBAMAAAB/pwA+AAAAKlBMVEUAAAD////+/v7+/v7+/v7+/v7+/v79/f39/f39/f3////9/f39/f3///8NoU90AAAADXRSTlMAAQ44On1/hIWHiLnHml1cVgAAADNJREFUCNdjYKAKYFKAM3UOwQXP3oEJ61zvPQQTLJSECnNfF2BcuwHMZAlkYBAzYKAuAAB+ZwpuqsfZHgAAAABJRU5ErkJggg=='); background-repeat: no-repeat; }
@@ -350,6 +351,7 @@ div:not(#foo) input[type="checkbox"] + label,
 
 .icon-expand_more-blueLight { background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUBAMAAAB/pwA+AAAAKlBMVEUAAAAA//9i1+ta2O1b2e5a2e1a2u1a2e5Z2e5Z2u5Z2u5a2e5Y2u5a2u7i9+CVAAAADXRSTlMAAQ07PYGEiImLjLfEujPFkQAAADhJREFUCNdjYKAuYAlkYBAzADO5rwswrt0AZjKdLZS8owBRoXO99xBUMdNZmCBQ+BDcDCYF6rgFAHOeCm40lWKyAAAAAElFTkSuQmCC'); background-repeat: no-repeat; }
 
+.comment-reply-title,
 .icon-expand_more-gray { background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUBAMAAAB/pwA+AAAAKlBMVEUAAAAAAAA6Ojo4PEA6PkI5PUE5PUE4PUE5PUE4PkA4PEE5PUE5PkE5PkGjAtHxAAAADXRSTlMAAQ07PYGEiImLjLfEujPFkQAAADhJREFUCNdjYKAuYAlkYBAzADO5rwswrt0AZjKdLZS8owBRoXO99xBUMdNZmCBQ+BDcDCYF6rgFAHOeCm40lWKyAAAAAElFTkSuQmCC'); background-repeat: no-repeat; }
 
 .icon-expand_more-grayDark { background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUBAMAAAB/pwA+AAAAKlBMVEUAAAAAAAA6OjozMzMyMjIzMzMyMjIyMjIyMjIzMzMxMTEzMzMxMTEzMzO+aSx3AAAADXRSTlMAAQ07PYGEiImLjLfEujPFkQAAADhJREFUCNdjYKAuYAlkYBAzADO5rwswrt0AZjKdLZS8owBRoXO99xBUMdNZmCBQ+BDcDCYF6rgFAHOeCm40lWKyAAAAAElFTkSuQmCC'); background-repeat: no-repeat; }

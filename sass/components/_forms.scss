@@ -9,9 +9,6 @@ fieldset {
   &:last-of-type {
     padding:0;
   }
-  h4 {
-    margin-bottom: $space-one-third;
-  }
 }
 .form-item {
   &.text,
@@ -48,21 +45,13 @@ input[type=password] {
   width:100%;
 
   @include breakpoint($medium) {
-    width: 300px;
+    max-width: $text-max-width;
   }
 }
 textarea {
   width:100%;
 
   @include breakpoint($medium) {
-    width: 400px;
-  }
-}
-
-form {
-  article & {
-    max-width: $max-width;
-    padding: $space;
-    background-color: $gray-lightest;
+    max-width: $text-max-width;
   }
 }

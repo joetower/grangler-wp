@@ -2,20 +2,17 @@
  * @file /layouts/_comments-area.scss
  * Comments Area Layout
  */
-
 .comments-area {
   @include flexbox();
   @include flex-wrap(wrap);
   @include align-items(center);
   @include justify-content(space-around);
   @include align-content(flex-start);
-  background-color: $cream-lighter;
 
   .comment-respond {
     @include flex(0 0 auto);
+    margin:0 auto;
+    max-width: $max-width;
     width: 100%;
-
-    padding: $space;
-    margin-top: $space;
   }
 }

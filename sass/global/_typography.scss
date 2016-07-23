@@ -22,6 +22,9 @@ p {
   + p {
     margin-top: $space+$space-one-half;
   }
+  + figure {
+    margin-top: $space;
+  }
   + h2,
   + h3,
   + h4,
@@ -148,6 +151,7 @@ label {
   @include font-size(1.6);
 
   font-family: $sans;
+  font-weight: $sans-bold;
 }
 input,
 textarea {

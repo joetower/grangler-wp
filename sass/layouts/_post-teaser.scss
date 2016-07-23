@@ -48,15 +48,15 @@
 
 
       &:hover {
-        background-color: $green-lightest;
-        color: $green-dark;
+        background-color: $green;
+        color: $green-lightest;
         img {
           filter: saturate(0%);
           opacity: .70;
           transition: all 0.25s;
         }
         .entry-title {
-          color: $green-dark;
+          color: $green-lightest;
         }
       }
     }

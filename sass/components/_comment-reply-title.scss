@@ -1,0 +1,16 @@
+/**
+ * @file /components/_comment-reply-title.scss
+ * Comments Area styles
+ */
+.comment-reply-title {
+  margin: 0;
+  cursor: pointer;
+  padding: $space $space $space $space-double;
+  color: $green-dark;
+  background-size: 30px;
+  background-position: $space-one-half center;
+
+  &.open {
+    color: $white;
+  }
+}

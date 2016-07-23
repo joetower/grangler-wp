@@ -4,10 +4,13 @@
  */
 
 hr {
+  @include clearfix();
   border: 0;
   height: 4px;
   background: $gray;
-
+  margin: $space 0;
+  clear: both;
+  
   &.color {
     background:$green-light;
   }
