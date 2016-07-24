@@ -10,11 +10,9 @@
   padding: $space-one-half;
   border: $border-width solid $gray-mid;
   color:$gray-mid;
+  max-width: $max-width;
 
   span {
-    display: inline-block;
-  }
-  span:not(:last-child) {
-    padding-right: $space-one-half;
+    display:block;
   }
 }

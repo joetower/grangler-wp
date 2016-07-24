@@ -11,7 +11,7 @@
     <?php endif; ?>
 
     <?php if( get_field('painting_price')): ?>
-      <span class="price"><em>Price: <?php the_field('painting_price'); ?></span>
+      <span class="price"><em>Price:</em> <?php the_field('painting_price'); ?></span>
     <?php endif; ?>
 
   </section>
