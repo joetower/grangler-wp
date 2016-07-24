@@ -1,0 +1,15 @@
+/**
+ * @file /layouts/_category.scss
+ * Category page layouts
+ */
+.category {
+  .page-header {
+    background-color: $gray-mid-dark;
+    width: 100%;
+    h1 {
+      @extend %wrapper;
+      color: $white;
+      text-align: center;
+    }
+  }
+}

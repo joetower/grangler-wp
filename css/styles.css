@@ -668,7 +668,8 @@ ol {
 .container,
 footer .site-info,
 .post.full.type-post .entry-content,
-.post.full.type-post .entry-footer {
+.post.full.type-post .entry-footer,
+.category .page-header h1 {
   margin: 0 auto;
   max-width: 1050px;
   padding: 30px; }
@@ -2578,6 +2579,17 @@ footer .social {
     -ms-flex: 1 auto;
     -webkit-box-flex: 1;
             flex: 1 auto; }
+
+/**
+ * @file /layouts/_category.scss
+ * Category page layouts
+ */
+.category .page-header {
+  background-color: #2A2E30;
+  width: 100%; }
+  .category .page-header h1 {
+    color: #FFFFFF;
+    text-align: center; }
 
 /*
 ////////////
