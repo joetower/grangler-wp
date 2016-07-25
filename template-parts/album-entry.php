@@ -39,7 +39,7 @@
           <?php echo $position; ?>
         <?php endif; ?>
         <?php if( $highlights ): ?>
-          <em><?php echo $highlights; ?></em>
+          <strong>Album highlights:</strong> <em><?php echo $highlights; ?></em>
         <?php endif; ?>
     </li>
 
