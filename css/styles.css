@@ -669,6 +669,7 @@ ol {
 footer .site-info,
 .post.full.type-post .entry-content,
 .post.full.type-post .entry-footer,
+.tag .page-header h1,
 .category .page-header h1 {
   margin: 0 auto;
   max-width: 1050px;
@@ -1525,6 +1526,10 @@ form.search .form-actions,
         width: 40%;
         margin-right: 4%;
         margin-bottom: 0; } }
+  .album-entries .highlights {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #DBFEA3; }
 
 .honorables {
   overflow: hidden;
@@ -2632,9 +2637,11 @@ footer .social {
  * @file /layouts/_category.scss
  * Category page layouts
  */
+.tag .page-header,
 .category .page-header {
   background-color: #2A2E30;
   width: 100%; }
+  .tag .page-header h1,
   .category .page-header h1 {
     color: #FFFFFF;
     text-align: center; }

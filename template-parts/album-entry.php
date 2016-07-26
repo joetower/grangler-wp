@@ -35,11 +35,13 @@
         <?php endif; ?>
         </div>
         <?php echo $review; ?>
-        <?php if( $position ): ?>
-          <?php echo $position; ?>
+        <?php if( $song ): ?>
+          <?php echo $song; ?>
         <?php endif; ?>
         <?php if( $highlights ): ?>
-          <strong>Album highlights:</strong> <em><?php echo $highlights; ?></em>
+          <section class="highlights">
+            <strong>Album highlights:</strong> <em><?php echo $highlights; ?></em>
+          </section>
         <?php endif; ?>
     </li>
 
@@ -49,7 +51,6 @@
 
   <?php if( get_field('honorable_mentions') ): ?>
     <section class="honorables">
-      <h2>Honorable mentions</h2>
       <?php the_field('honorable_mentions'); ?>
     </section>
   <?php endif; ?>

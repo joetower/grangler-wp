@@ -59,6 +59,11 @@
       margin-bottom: 0;
     }
   }
+  .highlights {
+    margin-top: $space;
+    padding: $space-one-half;
+    background-color: $green-lightest;
+  }
 }
 
 // Sections
