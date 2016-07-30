@@ -34,9 +34,15 @@
           </div>
         <?php endif; ?>
         </div>
+        
         <?php echo $review; ?>
+
         <?php if( $song ): ?>
-          <?php echo $song; ?>
+          <div class="video">
+            <div class="video-wrap">
+              <?php echo $song; ?>
+            </div>
+          </div>
         <?php endif; ?>
         <?php if( $highlights ): ?>
           <section class="highlights">

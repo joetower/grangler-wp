@@ -12,6 +12,7 @@
     display: block;
     list-style: none;
     padding: $space 0;
+
     + li {
       margin-top: $space;
       border-top: $border-width solid $gray-lightest;
@@ -19,7 +20,7 @@
   }
   figure {
     margin-bottom: $space;
-
+    z-index: 0;
     @include breakpoint($medium) {
       float: left;
       width: 40%;
@@ -32,10 +33,20 @@
 .top-section {
   @include clearfix();
   margin-bottom: $space;
+  position: relative;
 }
 .album-content {
-  padding: $space 0;
   text-align: center;
+
+  @include breakpoint($albums-overlaid) {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba($white, .9);
+    padding: $space;
+  }
 
   @include breakpoint($medium) {
     display: inline-block;
@@ -53,8 +64,11 @@
   font-weight: $sans-bolder;
   border-radius: 50%;
   background-color: $yellow;
-  padding: $space-one-third $space-one-half;
+  padding: $space-one-third;
   margin-bottom: $space-one-half;
+  width: 70px;
+  height: 70px;
+  text-align: center;
 }
 .album-title {
   margin-top: $space-one-third;
