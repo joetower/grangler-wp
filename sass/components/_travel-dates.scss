@@ -1,0 +1,19 @@
+/**
+ * @file /components/_travel-dates.scss
+ * Travel dates
+ */
+
+.dates {
+  @include font-size(1.6);
+  text-transform: uppercase;
+  font-weight: $sans-bold;
+}
+.travel-dates {
+  margin: $space-one-half 0 $space;
+  padding: $space-one-half $space;
+  color: $black;
+  border-top: $border-width solid $gray-dark;
+  border-bottom: $border-width solid $gray-dark;
+  max-width: $max-width;
+  text-align: center;
+}

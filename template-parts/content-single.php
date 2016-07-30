@@ -17,6 +17,8 @@
 
 			<header class="entry-header">
 				<?php the_title( '<h1 class="post-title">', '</h1>' ); ?>
+				<?php get_template_part( 'template-parts/travel-dates' ); ?>
+
 			</header><!-- .entry-header -->
 
 			<?php get_template_part( 'template-parts/with-paint-images' ); ?>

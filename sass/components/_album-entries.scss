@@ -8,7 +8,7 @@
   margin: 0;
   padding: 0;
 
-  li {
+  > li {
     display: block;
     list-style: none;
     padding: $space 0;
@@ -16,38 +16,6 @@
       margin-top: $space;
       border-top: $border-width solid $gray-lightest;
     }
-
-    .top-section {
-      @include clearfix();
-      margin-bottom: $space-one-half;
-    }
-  }
-  .album-content {
-    padding: $space 0;
-    text-align: center;
-
-    @include breakpoint($medium) {
-      display: inline-block;
-      padding: $space-one-half 0;
-      float: left;
-      width: 56%;
-      text-align: left;
-    }
-  }
-  .album-position {
-    @include font-size(2.8);
-    display: inline-block;
-    color: $brown;
-    font-weight: $sans-bolder;
-    border-radius: 50%;
-    background-color: $yellow;
-    padding: $space-one-third $space-one-half;
-    margin-bottom: $space-one-half;
-  }
-  .album-title {
-    margin-top: $space-one-third;
-    padding-top: $space-one-third;
-    border-top: $border-width solid $yellow;
   }
   figure {
     margin-bottom: $space;
@@ -59,13 +27,46 @@
       margin-bottom: 0;
     }
   }
-  .highlights {
-    margin-top: $space;
-    padding: $space-one-half;
-    background-color: $green-lightest;
+}
+
+.top-section {
+  @include clearfix();
+  margin-bottom: $space;
+}
+.album-content {
+  padding: $space 0;
+  text-align: center;
+
+  @include breakpoint($medium) {
+    display: inline-block;
+    padding: $space-one-half 0;
+    float: left;
+    width: 56%;
+    text-align: left;
   }
 }
 
+.album-position {
+  @include font-size(2.8);
+  display: inline-block;
+  color: $brown;
+  font-weight: $sans-bolder;
+  border-radius: 50%;
+  background-color: $yellow;
+  padding: $space-one-third $space-one-half;
+  margin-bottom: $space-one-half;
+}
+.album-title {
+  margin-top: $space-one-third;
+  padding-top: $space-one-third;
+  border-top: $border-width solid $yellow;
+}
+
+.highlights {
+  margin-top: $space;
+  padding: $space-one-half;
+  background-color: $green-lightest;
+}
 // Sections
 .honorables {
   @include clearfix();
