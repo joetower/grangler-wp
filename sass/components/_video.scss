@@ -10,4 +10,7 @@
   .video-wrap {
     @include intrinsic-ratio(16 9);
   }
+  .preview-lazyload {
+    height: 100%;
+  }
 }

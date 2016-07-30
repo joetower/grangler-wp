@@ -1383,6 +1383,8 @@ figcaption {
       position: absolute;
       top: 0;
       width: 100%; }
+  .video .preview-lazyload {
+    height: 100%; }
 
 /**
  * @file /components/_message.scss
