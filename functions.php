@@ -52,7 +52,4 @@ function content($limit) {
  return $content;
 }
 
-// remove styles
-wp_dequeue_style('style-lazyload.min');
-
 ?>
