@@ -6,7 +6,9 @@
 .caption > figcaption {
   display: block;
 }
-
+.wp-caption {
+  max-width: 100%;
+}
 figcaption {
   @include clearfix();
   @include font-size(1.4);
