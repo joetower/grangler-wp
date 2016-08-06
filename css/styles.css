@@ -1516,15 +1516,6 @@ form.search .form-actions,
 
 .album-content {
   text-align: center; }
-  @media (min-width: 0) and (max-width: 47.9375em) {
-    .album-content {
-      z-index: 1;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background-color: rgba(255, 255, 255, 0.9);
-      padding: 30px; } }
   @media (min-width: 48em) {
     .album-content {
       display: inline-block;

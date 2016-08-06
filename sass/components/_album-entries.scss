@@ -38,16 +38,6 @@
 .album-content {
   text-align: center;
 
-  @include breakpoint($albums-overlaid) {
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba($white, .9);
-    padding: $space;
-  }
-
   @include breakpoint($medium) {
     display: inline-block;
     padding: $space-one-half 0;
