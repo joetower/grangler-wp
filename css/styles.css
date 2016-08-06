@@ -671,7 +671,8 @@ footer .site-info,
 .post.full.type-post .entry-content,
 .post.full.type-post .entry-footer,
 .tag .page-header h1,
-.category .page-header h1 {
+.category .page-header h1,
+.author .page-header h1 {
   margin: 0 auto;
   max-width: 1050px;
   padding: 30px; }
@@ -2689,6 +2690,23 @@ footer .social {
   .category .page-header h1 {
     color: #FFFFFF;
     text-align: center; }
+
+/**
+ * @file /layouts/_author.scss
+ * Author page layouts
+ */
+.author .page-header {
+  background-color: #2A2E30;
+  width: 100%; }
+  .author .page-header h1 {
+    color: #FFFFFF;
+    text-align: center; }
+
+.author .about {
+  margin: 0 auto;
+  max-width: 720px;
+  padding: 30px 0;
+  clear: both; }
 
 /*
 ////////////

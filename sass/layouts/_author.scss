@@ -1,0 +1,22 @@
+/**
+ * @file /layouts/_author.scss
+ * Author page layouts
+ */
+
+.author {
+  .page-header {
+    background-color: $gray-mid-dark;
+    width: 100%;
+    h1 {
+      @extend %wrapper;
+      color: $white;
+      text-align: center;
+    }
+  }
+  .about {
+    margin: 0 auto;
+    max-width: $max-width;
+    padding: $space 0;
+    clear: both;
+  }
+}
