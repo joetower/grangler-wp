@@ -3,24 +3,27 @@
  * Nav Links
  */
 .pagination {
-  @include flexbox();
-  @include flex-direction(row);
-  @include justify-content(space-around);
-  @include align-items(center);
-  @include align-content(flex-start);
+  display: flex;
+  align-items: center;
   width: 100%;
 
   .nav-links {
-    @include flexbox();
-    @include flex-direction(row);
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
   }
   .page-numbers {
-    @include flexbox();
-    @include flex(1 auto);
+    text-align: center;
+    flex: 1 1 auto;
+    width: 25%;
+
+    @include breakpoint($medium) {
+      width: auto;
+    }
   }
-  .current,
   a {
-    @include flexbox();
-    @include flex(1 auto);
+    text-align: center;
   }
 }

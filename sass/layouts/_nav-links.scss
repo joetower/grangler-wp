@@ -3,16 +3,17 @@
  * Nav Links
  */
 .nav-links {
+
   .nav-next,
   .nav-previous {
-    @include flexbox();
-    @include flex(1 auto);
+    display: flex;
+    flex: 1 1 auto;
+
     @include breakpoint($medium) {
       width: 50%;
     }
-  }
-  a {
-    @include flexbox();
-    @include flex(1 auto);
+    a {
+      width: 100%;
+    }
   }
 }

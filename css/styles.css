@@ -2585,27 +2585,18 @@ footer .social {
 .nav-links .nav-next,
 .nav-links .nav-previous {
   display: -webkit-box;
-  display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  -moz-flex: 1 auto;
-  -ms-flex: 1 auto;
   -webkit-box-flex: 1;
-          flex: 1 auto; }
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto; }
   @media (min-width: 48em) {
     .nav-links .nav-next,
     .nav-links .nav-previous {
       width: 50%; } }
-
-.nav-links a {
-  display: -webkit-box;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -moz-flex: 1 auto;
-  -ms-flex: 1 auto;
-  -webkit-box-flex: 1;
-          flex: 1 auto; }
+  .nav-links .nav-next a,
+  .nav-links .nav-previous a {
+    width: 100%; }
 
 /**
  * @file /layouts/_site-header-main.scss
@@ -2621,53 +2612,34 @@ footer .social {
  */
 .pagination {
   display: -webkit-box;
-  display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: horizontal;
-  -moz-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-pack: distribute;
-  -moz-justify-content: space-around;
-  justify-content: space-around;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  -moz-align-items: center;
-  align-items: center;
-  -ms-flex-line-pack: start;
-  align-content: flex-start;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%; }
   .pagination .nav-links {
     display: -webkit-box;
-    display: -moz-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-direction: normal;
-    -webkit-box-orient: horizontal;
-    -moz-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row; }
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    text-align: center; }
   .pagination .page-numbers {
-    display: -webkit-box;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -moz-flex: 1 auto;
-    -ms-flex: 1 auto;
+    text-align: center;
     -webkit-box-flex: 1;
-            flex: 1 auto; }
-  .pagination .current,
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    width: 25%; }
+    @media (min-width: 48em) {
+      .pagination .page-numbers {
+        width: auto; } }
   .pagination a {
-    display: -webkit-box;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -moz-flex: 1 auto;
-    -ms-flex: 1 auto;
-    -webkit-box-flex: 1;
-            flex: 1 auto; }
+    text-align: center; }
 
 /**
  * @file /layouts/_category.scss
