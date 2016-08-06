@@ -4,29 +4,27 @@
  */
 
 .content-bottom-widgets {
-  @include flexbox();
-  @include flex-wrap(wrap);
-  @include flex-direction(column);
-  @include justify-content(flex-start);
-  @include align-items(stretch);
-  @include align-content(stretch);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
 
   @include breakpoint($small-medium) {
-    @include flex-direction(row);
+    flex-direction: row;
   }
 
   .widget-area {
     @include clearfix();
-    @include flexbox();
-    @include flex-wrap(wrap);
-    @include flex-direction(row);
-    @include flex(1 auto);
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 auto;
 
     @include breakpoint ($small-medium) {
       width: 50%;
     }
     section {
-      @include flex(1 auto);
+      flex: 1 auto;
 
       @include breakpoint ($small-medium) {
         width: 50%;

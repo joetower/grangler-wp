@@ -6,23 +6,23 @@
 .main-menu {
 
   ul.menu {
-    @include flexbox();
-    @include flex-wrap(wrap);
-    @include flex(0 0 auto);
-    @include justify-content(flex-start);
-    @include align-items(stretch);
-    @include align-content(stretch);
+    display: flex;
+    flex-flow: row wrap;
+    flex: 0 0 auto;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
     width: 100%;
 
     @include breakpoint($large) {
-      @include align-items(flex-start);
-      @include align-content(flex-start);
+      align-items: flex-start;
+      align-content: flex-start;
     }
   }
   li {
-    @include flexbox();
-    @include flex-wrap(wrap);
-    @include flex(0 0 auto);
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 auto;
     width: 25%;
 
     @include breakpoint($medium) {
@@ -39,7 +39,7 @@
       width: auto;
 
       @include breakpoint($large) {
-        @include flex(1 auto);
+        flex: 1 auto;
       }
     }
   }

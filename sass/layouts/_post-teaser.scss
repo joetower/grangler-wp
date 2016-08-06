@@ -61,7 +61,7 @@
       }
     }
     .post-thumbnail {
-      @include flex(1 auto);
+      flex: 1 auto;
       width: 100%;
 
       @include breakpoint($smaller) {

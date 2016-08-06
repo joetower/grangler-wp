@@ -6,38 +6,36 @@
 footer {
   &.site-footer {
     @include clearfix();
-
-    @include flexbox();
-    @include flex-wrap(wrap);
-    @include align-items(center);
-    @include justify-content(space-around);
-    @include align-content(flex-start);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-start;
     clear: both;
   }
   .site-slogan {
-    @include flex(1 auto);
-    @include align-self(center);
+    flex: 1 auto;
+    align-self: center;
     max-width: 218px;
+
     @include breakpoint($large) {
       max-width: 300px;
     }
   }
   .social {
-    @include flex(0 0 auto);
-    @include flexbox();
-    @include flex-wrap(wrap);
-    @include justify-content(center);
-    @include align-items(center);
-    @include align-content(flex-start);
+    display: flex;
     margin: $space 0 0;
+    flex: 0 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
     padding: 0;
     width: 100%;
 
     li {
-      @include flexbox();
-      @include flex-wrap(wrap);
-      @include flex(0 1 auto);
       margin: 0;
+      flex: 0 1 auto;
       list-style-type: none;
     }
     a {

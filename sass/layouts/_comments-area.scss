@@ -3,15 +3,14 @@
  * Comments Area Layout
  */
 .comments-area {
-  @include flexbox();
-  @include flex-wrap(wrap);
-  @include align-items(center);
-  @include justify-content(space-around);
-  @include align-content(flex-start);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  align-content: flex-start;
 
   .comment-respond {
-    @include flex(0 0 auto);
     margin:0 auto;
+    flex: 0 0 auto;
     max-width: $max-width;
     width: 100%;
   }

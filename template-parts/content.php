@@ -24,9 +24,9 @@
 				<?php if ( is_sticky() && is_home() && ! is_paged() ) : ?>
 					<span class="sticky-post"><?php _e( 'Featured', 'twentysixteen' ); ?></span>
 				<?php endif; ?>
-				<span class="entry-title">
+				<h2 class="entry-title">
 					<?php the_title( ); ?>
-				</span>
+				</h2>
 			</span><!-- .entry-header -->
 
 			<span class="entry-content">
