@@ -19,7 +19,7 @@
       flex-direction: row;
       justify-content: flex-start;
       align-items: stretch;
-      align-content: center;
+      align-content: stretch;
       width: 50%;
     }
     @include breakpoint($medium) {

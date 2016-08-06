@@ -2252,8 +2252,8 @@ footer .social {
       -webkit-box-align: stretch;
           -ms-flex-align: stretch;
               align-items: stretch;
-      -ms-flex-line-pack: center;
-          align-content: center;
+      -ms-flex-line-pack: stretch;
+          align-content: stretch;
       width: 50%; } }
   @media (min-width: 48em) {
     .post.teaser.type-post {
@@ -2454,7 +2454,8 @@ footer .social {
   display: flex;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
-          flex: 1 1 auto; }
+          flex: 1 1 auto;
+  width: 100%; }
   @media (min-width: 48em) {
     .nav-links .nav-next,
     .nav-links .nav-previous {
