@@ -7,7 +7,7 @@
 
   &.teaser.type-post {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
@@ -32,7 +32,7 @@
 
     a {
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       flex-direction: column;
       justify-content: flex-start;
       align-items:stretch;
@@ -42,6 +42,7 @@
       transition: all 0.25s;
 
       @include breakpoint($smaller) {
+        flex-wrap: wrap;
         flex-direction: row;
         width: 100%;
       }
