@@ -7,10 +7,13 @@
   .page-header {
     background-color: $gray-mid-dark;
     width: 100%;
+    text-align: center;
     h1 {
-      @extend %wrapper;
       color: $white;
-      text-align: center;
+      max-width: 100%;
     }
+  }
+  .taxonomy-description {
+    color: $white;
   }
 }

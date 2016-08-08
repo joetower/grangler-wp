@@ -19,4 +19,19 @@
     padding: $space 0;
     clear: both;
   }
+  .posts {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: $space 0 0;
+  }
+  .post-header {
+    background-color: $gray-light;
+    width: 100%;
+    h2 {
+      @extend %wrapper;
+      color: $gray-mid-dark;
+      text-align: center;
+    }
+  }
 }

@@ -10,6 +10,15 @@ footer {
     background-color: $brown;
     color: $cream;
   }
+  a,
+  a:link,
+  a:visited {
+    color: $yellow;
+
+    &:hover {
+      color: $white;
+    }
+  }
   .site-info {
     @extend %wrapper;
     width: 100%;

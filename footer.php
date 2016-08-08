@@ -54,6 +54,7 @@
 				<?php endif; ?>
 
 				<span class="copyright">Holler at me : joe-at-joetower.com</span>
+				<p><strong><a href="/author/joetower">About Me</a></strong></p>
 
 			</div><!-- .site-info -->
 		</footer><!-- .site-footer -->
