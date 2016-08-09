@@ -42,7 +42,7 @@
       }
       .photo {
         display:inline-block;
-        clip-path: circle(25px at center);
+        clip-path: circle(60px at center);
 
         @include breakpoint($large) {
           display:block;

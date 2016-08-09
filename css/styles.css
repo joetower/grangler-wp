@@ -1052,8 +1052,8 @@ article {
           text-align: center; } }
       .entry-footer .byline .author .photo {
         display: inline-block;
-        -webkit-clip-path: circle(25px at center);
-                clip-path: circle(25px at center); }
+        -webkit-clip-path: circle(60px at center);
+                clip-path: circle(60px at center); }
         @media (min-width: 64em) {
           .entry-footer .byline .author .photo {
             display: block;
@@ -1276,15 +1276,14 @@ footer.site-footer {
   padding: 60px 30px;
   background-color: #433E0E;
   color: #DFD6A7; }
-
-footer a,
-footer a:link,
-footer a:visited {
-  color: #DDE000; }
-  footer a:hover,
-  footer a:link:hover,
-  footer a:visited:hover {
-    color: #FFFFFF; }
+  footer.site-footer a,
+  footer.site-footer a:link,
+  footer.site-footer a:visited {
+    color: #DDE000; }
+    footer.site-footer a:hover,
+    footer.site-footer a:link:hover,
+    footer.site-footer a:visited:hover {
+      color: #FFFFFF; }
 
 footer .site-info {
   width: 100%; }

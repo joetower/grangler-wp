@@ -30,7 +30,21 @@ get_header(); ?>
 			<section class="about">
 				<div class="wrapper">
 					<article class="full">
-						<?php echo get_avatar( get_the_author_meta( 'ID' ), 300 ); ?>
+						<?php
+						    // Retrieve The Post's Author ID
+						    $user_id = get_the_author_meta('ID');
+						    // Set the image size. Accepts all registered images sizes and array(int, int)
+						    $size = 'teaser-square';
+						    // Get the image URL using the author ID and image size params
+						    $imgURL = get_cupp_meta($user_id, $size);
+
+						    // Print the image on the page
+						?>
+
+						<?php
+						echo '<img class="photo" src="'. $imgURL .'" alt="Joe Tower profil photo taken on the patio of Black Dog restaurant in St. Paul">';
+						?>
+
 						<h2>My name is Joe Tower. I design user-focused experiences.</h2>
 						<p>I live in the Nokomis Neighborhood of Minneapolis, MN, with a lady and
 							two dogs. I am a print designer, turned web designer, turned front-end

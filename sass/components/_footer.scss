@@ -9,16 +9,17 @@ footer {
     padding:$space-double $space;
     background-color: $brown;
     color: $cream;
-  }
-  a,
-  a:link,
-  a:visited {
-    color: $yellow;
+    a,
+    a:link,
+    a:visited {
+      color: $yellow;
 
-    &:hover {
-      color: $white;
+      &:hover {
+        color: $white;
+      }
     }
   }
+
   .site-info {
     @extend %wrapper;
     width: 100%;
