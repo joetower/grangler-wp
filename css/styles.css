@@ -1939,6 +1939,11 @@ form.search .form-actions,
     color: #FFFFFF; }
   .comments-area .comment-respond {
     padding: 30px; }
+  .comments-area .comment-form {
+    overflow: hidden;
+    *zoom: 1;
+    clear: both;
+    width: 100%; }
 
 /**
  * @file /components/_travel-dates.scss
@@ -2033,8 +2038,11 @@ body {
   body .site-footer,
   body .site,
   body .site-inner,
+  body .site-content,
   body .site-main,
-  body .comments-area {
+  body .content-area,
+  body .comments-area,
+  body .content-bottom-widgets {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

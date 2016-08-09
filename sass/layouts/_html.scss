@@ -16,8 +16,11 @@ body {
   .site-footer,
   .site,
   .site-inner,
+  .site-content,
   .site-main,
-  .comments-area {
+  .content-area,
+  .comments-area,
+  .content-bottom-widgets {
     display: flex;
     flex-flow: row wrap;
     flex: 1 0 auto;

@@ -12,4 +12,9 @@
   .comment-respond {
     padding: $space;
   }
+  .comment-form {
+    @include clearfix();
+    clear: both;
+    width: 100%;
+  }
 }
