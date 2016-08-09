@@ -92,6 +92,13 @@
 
 .icon-block { background-image: url('png/block.png'); background-repeat: no-repeat; }
 
+.icon-chat-gray { background-image: url('png/chat-gray.png'); background-repeat: no-repeat; }
+
+.comment-reply-title,
+.icon-chat-green { background-image: url('png/chat-green.png'); background-repeat: no-repeat; }
+
+.icon-chat { background-image: url('png/chat.png'); background-repeat: no-repeat; }
+
 .icon-check-black { background-image: url('png/check-black.png'); background-repeat: no-repeat; }
 
 .icon-check-blue { background-image: url('png/check-blue.png'); background-repeat: no-repeat; }
@@ -334,7 +341,6 @@ div:not(#foo) input[type="checkbox"] + label,
 
 .icon-expand_less-grayDark { background-image: url('png/expand_less-grayDark.png'); background-repeat: no-repeat; }
 
-.comment-reply-title.open,
 .icon-expand_less-green { background-image: url('png/expand_less-green.png'); background-repeat: no-repeat; }
 
 .icon-expand_less-white { background-image: url('png/expand_less-white.png'); background-repeat: no-repeat; }
@@ -351,7 +357,6 @@ div:not(#foo) input[type="checkbox"] + label,
 
 .icon-expand_more-blueLight { background-image: url('png/expand_more-blueLight.png'); background-repeat: no-repeat; }
 
-.comment-reply-title,
 .icon-expand_more-gray { background-image: url('png/expand_more-gray.png'); background-repeat: no-repeat; }
 
 .icon-expand_more-grayDark { background-image: url('png/expand_more-grayDark.png'); background-repeat: no-repeat; }

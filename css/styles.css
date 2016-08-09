@@ -1918,23 +1918,15 @@ form.search .form-actions,
  * Comments Area styles
  */
 .comment-reply-title {
+  font-size: 20px;
+  font-size: 2rem;
+  display: block;
   margin: 0;
   cursor: pointer;
-  padding: 30px 30px 30px 60px;
   color: #253D00;
   background-size: 30px;
-  background-position: 15px center; }
-  .comment-reply-title.open {
-    color: #FFFFFF; }
-
-/**
- * @file /components/_comment-form.scss
- * Comment form styles
- */
-.comment-form {
-  display: none; }
-  .comment-form.open {
-    display: block; }
+  background-position: 15px center;
+  text-align: center; }
 
 /**
  * @file /components/_comments-area.scss

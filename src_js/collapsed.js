@@ -6,21 +6,17 @@
 (function ($) {
   'use strict';
   $(document).ready(function () {
-
-    $('.toggleComments').on('click', function(event) {
-      event.preventDefault();
-      if ($('.comment-form').hasClass('open')) {
-        $('.comment-form').removeClass('open');
-        $('.toggleComments').removeClass('open');
-        $('.comments-area').removeClass('open');
-      } else {
-        $('.toggleComments').addClass('open');
-        $('.comment-form').addClass('open');
-        $('.comments-area').addClass('open');
-      }
-    });
-
-
-  });
-
+    $('.show-comments').on('click', function(){
+    var disqus_shortname = 'joetower'; // Replace this value with *your* username.
+    // ajax request to load the disqus javascript
+    $.ajax({
+                      type: "GET",
+                      url: "http://" + disqus_shortname + ".disqus.com/embed.js",
+                      dataType: "script",
+                      cache: true
+              });
+    // hide the button once comments load
+    $(this).fadeOut();
+        });
+});
 })(jQuery);

@@ -42,8 +42,7 @@ module.exports = {
       'check_box-black': ['div:not(#foo) input[type="checkbox"]:checked + label'],
       'format_quote-orange': ['blockquote'],
       'search-gray': ['input.form-search'],
-      'expand_more-gray': ['.comment-reply-title'],
-      'expand_less-green': ['.comment-reply-title.open'],
+      'chat-green': ['.comment-reply-title'],
     },
   }
 };
