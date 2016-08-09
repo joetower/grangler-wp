@@ -83,13 +83,14 @@
     }
     .teaser-content {
       flex: 0 0 auto;
-      padding: $space;
+      padding: $space $space $space-triple;
       width: 100%;
 
       @include breakpoint($medium) {
         flex: 0 0 auto;
         width: 65%;
         align-self: center;
+        padding: $space;
       }
       @include breakpoint($large) {
         width: 75%;
