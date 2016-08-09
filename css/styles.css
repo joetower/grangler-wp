@@ -2256,6 +2256,9 @@ footer .social {
             -ms-flex-order: 2;
                 order: 2;
         width: 25%; } }
+  .post.full.type-post .entry-content,
+  .post.full.type-post .entry-footer {
+    max-width: 100%; }
 
 /**
  * @file /layouts/_post-teaser.scss

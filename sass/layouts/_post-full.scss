@@ -39,7 +39,6 @@
       flex: 1 auto;
       width: 100%;
       order: 3;
-
       @include breakpoint($large) {
         flex: 1 1 auto;
         order: 2;
@@ -49,6 +48,7 @@
     .entry-content,
     .entry-footer{
       @extend %wrapper;
+      max-width: 100%;
     }
   }
 }
