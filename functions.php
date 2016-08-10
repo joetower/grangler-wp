@@ -9,6 +9,8 @@ if ( function_exists( 'add_theme_support' ) ) {
     // delete the next line if you do not need additional image sizes
     add_image_size( 'teaser-square', 300, 300, true ); //300 square pixels cropped
     add_image_size( 'teaser-square-large', 500, 500, true ); //300 square pixels cropped
+    add_image_size( 'teaser-square-med-large', 600, 600, true ); //300 square pixels cropped
+    add_image_size( 'teaser-square-extra-large', 800, 800, true ); //300 square pixels cropped
 
 }
 

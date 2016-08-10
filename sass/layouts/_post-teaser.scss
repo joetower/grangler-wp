@@ -76,11 +76,18 @@
       @include breakpoint($large) {
         width: 25%;
       }
+      @include breakpoint($x-large) {
+        width: 35%;
+      }
+      @include breakpoint($xx-large) {
+        width: 45%;
+      }
       img {
         width: 100%;
         vertical-align: bottom;
       }
     }
+
     .teaser-content {
       flex: 0 0 auto;
       padding: $space $space $space-triple;
@@ -94,6 +101,12 @@
       }
       @include breakpoint($large) {
         width: 75%;
+      }
+      @include breakpoint($x-large) {
+        width: 65%;
+      }
+      @include breakpoint($xx-large) {
+        width: 55%;
       }
     }
   }

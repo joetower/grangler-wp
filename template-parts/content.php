@@ -14,7 +14,7 @@
 		<?php if ( has_post_thumbnail()) : ?>
 			<span class="post-thumbnail">
 				<figure>
-					<?php the_post_thumbnail('teaser-square'); ?>
+					<?php the_post_thumbnail('teaser-square-med-large'); ?>
 				</figure>
 		 	</span>
 		 <?php endif; ?>

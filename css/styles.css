@@ -2377,6 +2377,12 @@ footer .social {
     @media (min-width: 64em) {
       .post.teaser.type-post .post-thumbnail {
         width: 25%; } }
+    @media (min-width: 78.75em) {
+      .post.teaser.type-post .post-thumbnail {
+        width: 35%; } }
+    @media (min-width: 100em) {
+      .post.teaser.type-post .post-thumbnail {
+        width: 45%; } }
     .post.teaser.type-post .post-thumbnail img {
       width: 100%;
       vertical-align: bottom; }
@@ -2398,6 +2404,12 @@ footer .social {
     @media (min-width: 64em) {
       .post.teaser.type-post .teaser-content {
         width: 75%; } }
+    @media (min-width: 78.75em) {
+      .post.teaser.type-post .teaser-content {
+        width: 65%; } }
+    @media (min-width: 100em) {
+      .post.teaser.type-post .teaser-content {
+        width: 55%; } }
 
 /**
  * @file /layouts/_comments-area.scss
