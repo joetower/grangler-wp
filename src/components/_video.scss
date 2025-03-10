@@ -1,0 +1,18 @@
+/**
+ * @file /components/_video.scss
+ * Video styles using intrinsic-ratio
+ */
+ @use "../config/variables";
+ @use "../config/mixins";
+
+.video {
+  margin-top: variables.$space;
+  margin-bottom: variables.$space;
+
+  .video-wrap {
+    aspect-ratio: 16/9;
+  }
+  .preview-lazyload {
+    height: 100%;
+  }
+}

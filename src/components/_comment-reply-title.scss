@@ -1,0 +1,18 @@
+/**
+ * @file /components/_comment-reply-title.scss
+ * Comments Area styles
+ */
+
+@use "../config/variables";
+@use "../config/mixins";
+
+.comment-reply-title {
+  font-size: 2rem;
+  display: block;
+  margin: 0;
+  cursor: pointer;
+  color: variables.$green-dark;
+  background-size: 30px;
+  background-position: variables.$space-one-half center;
+  text-align: center;
+}

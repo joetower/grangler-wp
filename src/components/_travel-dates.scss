@@ -1,0 +1,21 @@
+/**
+ * @file /components/_travel-dates.scss
+ * Travel dates
+ */
+ @use "../config/variables";
+ @use "../config/mixins";
+
+.dates {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: var(--font-weight--sans-bold);;
+}
+.travel-dates {
+  margin: variables.$space-one-half 0 variables.$space;
+  padding: variables.$space-one-half variables.$space;
+  color: variables.$black;
+  border-top:variables.$border-width solid variables.$gray-dark;
+  border-bottom: variables.$border-width solid variables.$gray-dark;
+  max-width: variables.$max-width;
+  text-align: center;
+}

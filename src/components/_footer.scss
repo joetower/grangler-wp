@@ -1,0 +1,36 @@
+/**
+ * @file /components/_footer.scss
+ * Footer design
+ */
+ @use "../config/variables";
+ @use "../config/mixins";
+
+footer {
+
+  &.site-footer {
+    padding: variables.$space-double variables.$space;
+    background-color: variables.$brown;
+    color: variables.$cream;
+    a,
+    a:link,
+    a:visited {
+      color: variables.$yellow;
+
+      &:hover {
+        color: variables.$white;
+      }
+    }
+  }
+
+  .site-info {
+    width: 100%;
+    max-width: variables.$max-width;
+    margin: 0 auto;
+  }
+  .site-slogan {
+    @include mixins.breakpoint(md) {
+      margin-right: variables.$space-one-half;
+    }
+  }
+
+}

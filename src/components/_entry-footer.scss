@@ -1,0 +1,110 @@
+/**
+ * @file /components/_entry-footer.scss
+ * Entry footer parts
+ */
+
+@use "../config/variables";
+@use "../config/mixins";
+
+.entry-footer {
+  font-size: 1.4rem;
+  color: variables.$gray;
+  background-color:variables.$gray-lightest;
+  font-weight: var(--font-weight--sans-regular);
+
+  .post.full & {
+    padding-top: variables.$space;
+
+    @include mixins.breakpoint(lg) {
+      padding-top: variables.$space-double + variables.$space;
+    }
+  }
+
+  .byline {
+    display: block;
+  
+    @include mixins.breakpoint(smd) {
+      display:inline-block;
+      width: 50%;
+      float: left;
+    }
+    @include mixins.breakpoint(lg) {
+      display:block;
+      margin-bottom: variables.$space-one-half;
+      padding-bottom: variables.$space-one-half;
+      border-bottom: 1px solid variables.$gray-mid;
+      width: auto;
+      float: none;
+    }
+
+    .author {
+      display: block;
+
+      @include mixins.breakpoint(lg) {
+        text-align: center;
+      }
+      .photo {
+        display:inline-block;
+        clip-path: circle(60px at center);
+
+        @include mixins.breakpoint(lg) {
+          display:block;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  .meta {
+    display: block;
+
+    @include mixins.breakpoint(smd) {
+      display:inline-block;
+      width: 50%;
+    }
+    @include mixins.breakpoint(lg) {
+      display:block;
+      width: auto;
+    }
+    .posted-on {
+      display: block;
+      margin-bottom: variables.$space-one-half;
+      padding-bottom: variables.$space-one-half;
+      border-bottom: 1px solid variables.$gray-mid;
+    }
+    .categories {
+      display: block;
+      text-transform: lowercase;
+      + .tags {
+        padding-top: variables.$space-one-fourth;
+      }
+    }
+    .tags {
+      display: block;
+      text-transform: lowercase;
+    }
+  }
+  .comments-link {
+    display: inline-block;
+
+    @include mixins.breakpoint(lg) {
+      display: block;
+      a {
+        display: block;
+        padding: variables.$space-one-third;
+      }
+    }
+  }
+
+  .edit-link {
+    display: block;
+    margin-top: variables.$space;
+
+    a.post-edit-link {
+      display: block;
+    }
+  }
+  .updated:not(.published) {
+    display: none;
+  }
+}

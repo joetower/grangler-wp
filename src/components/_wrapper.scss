@@ -1,0 +1,14 @@
+/**
+ * @file /components/_wrapper.scss
+ * Wrapper styles - contain site components
+ */
+
+@use "../config/variables";
+@use "../config/mixins";
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  max-width: variables.$grid-width;
+  padding: variables.$space;
+}

@@ -1,0 +1,40 @@
+/**
+ * @file /components/_link.scss
+ * Link styles
+ */
+ @use "../config/variables";
+ @use "../config/mixins";
+
+a,
+a:link {
+  color: variables.$link;
+  text-decoration: none;
+  transition: all 0.15s;
+
+  &:visited {
+    color: mix(black, variables.$link, 10%);
+  }
+  &:hover {
+    color: mix(black, variables.$link, 60%);
+  }
+
+  // fancy links for full node links
+  article.full & {
+    &:not(.button) {
+      border-bottom: variables.$border-width/2 solid variables.$link;
+      transition: all 0.2s;
+
+      &:hover {
+        background-color: variables.$link-highlight;
+        border-color: mix(variables.$black, variables.$link-highlight, 40%);
+      }
+      &:visited {
+        border-color: mix(variables.$white, variables.$link, 80%);
+        &:hover {
+          border-color: mix(black, variables.$link, 40%);
+          color: mix(black, variables.$link, 40%);
+        }
+      }
+    }
+  }
+}

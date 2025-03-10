@@ -1,0 +1,47 @@
+/**
+ * @file /styles.scss
+ * All the main style partials go here.
+ */
+
+/*
+//////////////////////////////
+// Config
+//////////////////////////////
+*/
+
+@forward "config/config";
+
+/*
+////////////
+*/
+
+
+/*
+//////////////////////////////
+// GLOBALS
+*/
+@forward "global/normalize";
+@forward "global/typography";
+
+
+/*
+////////////
+*/
+
+/*
+//////////////////////////////
+// COMPONENTS
+//////////////////////////////
+*/
+@forward "components/components";
+
+/*
+//////////////////////////////
+// Layouts
+//////////////////////////////
+*/
+@forward "layouts/layouts";
+
+/*
+////////////
+*/

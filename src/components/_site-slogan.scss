@@ -1,0 +1,15 @@
+/**
+ * @file /components/_site-slogan.scss
+ * Site slogan text
+ */
+
+@use "../config/variables";
+@use "../config/mixins";
+
+.site-slogan {
+  color:variables.$gray;
+
+  footer & {
+    color: variables.$white;
+  }
+}

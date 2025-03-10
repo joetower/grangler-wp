@@ -1,0 +1,18 @@
+/**
+ * @file /components/_article.scss
+ * Article
+ */
+
+@use "../config/variables";
+@use "../config/mixins";
+
+article {
+  position: relative;
+
+  p {
+    max-width:variables.$text-max-width;
+    .button {
+      margin-top: variables.$space-one-half;
+    }
+  }
+}

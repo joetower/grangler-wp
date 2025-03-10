@@ -1,0 +1,12 @@
+/**
+ * @file /components/_about.scss
+ * About page components
+ */
+@use "../config/variables";
+
+.about {
+  .photo {
+    clip-path: circle(140px at center);
+    margin-bottom: variables.$space;
+  }
+}

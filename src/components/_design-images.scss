@@ -1,0 +1,11 @@
+/**
+ * @file /components/_design-images.scss
+ * Design assets: images
+ */
+ @use "../config/variables";
+ @use "../config/mixins";
+
+.design-images {
+  margin-top: variables.$space;
+  max-width: variables.$max-width;
+}

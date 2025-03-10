@@ -1,0 +1,60 @@
+/**
+ * @file /components/_forms.scss
+ * Forms
+ */
+
+@use "../config/variables";
+@use "../config/mixins";
+
+fieldset {
+  padding: 0 0 variables.$space;
+  border: 0;
+  &:last-of-type {
+    padding:0;
+  }
+}
+.form-item {
+  &.text,
+  &.textarea,
+  &.select {
+    font-weight: var(--font-weight--sans-bold);;
+  }
+}
+label + input[type=text],
+label + input[type=email],
+label + input[type=url],
+label + input[type=password],
+label + textarea {
+  display: block;
+  padding: variables.$space-one-third;
+}
+
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+textarea {
+  border: 2px solid variables.$green;
+
+  &:focus {
+    border-color: variables.$green-light;
+    outline-color: variables.$green-light;
+  }
+}
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password] {
+  width:100%;
+
+  @include mixins.breakpoint(md) {
+    max-width: variables.$text-max-width;
+  }
+}
+textarea {
+  width:100%;
+
+  @include mixins.breakpoint(md) {
+    max-width: variables.$text-max-width;
+  }
+}

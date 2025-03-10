@@ -1,0 +1,12 @@
+/**
+ * @file /components/_container.scss
+ * Container class defaults
+ */
+
+@use "../config/variables";
+@use "../config/mixins";
+
+.container {
+  max-width: var(--site-max-width);
+  padding: 0;
+}

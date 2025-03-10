@@ -1,0 +1,142 @@
+/**
+ * @file /components/_button.scss
+ * Button
+ */
+@use "../config/variables";
+@use "../config/mixins";
+
+button,
+.button,
+a.button,
+a.button:link,
+a.button:visited,
+%button,
+input[type='submit'] {
+  font-size: 1.4rem;
+  font-family: var(--font-family--sans);
+  font-weight: var(--font-weight--sans-bold);;
+  padding: variables.$space-one-half variables.$space;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0;
+  -webkit-appearance: none;
+  transition: all 0.1s;
+
+  @include mixins.breakpoint(lg) {
+    font-size: 1.5rem;
+  }
+
+  &.more-link {
+    font-weight: var(--font-weight--sans-bold);
+    text-align: center;
+  }
+}
+
+input[type='submit'],
+a.btn-primary,
+a.btn-primary:link,
+a.btn-primary:visited,
+.btn-primary,
+.btn-primary:link,
+.btn-primary:visited,
+%btn-primary {
+  background-color: variables.$green;
+  color: variables.$black;
+  border: 1px solid darken(variables.$green, 15%);
+  &:hover {
+    background-color: lighten(variables.$green, 15%);
+    border-color: variables.$green;
+  }
+}
+
+a.btn-secondary,
+a.btn-secondary:link,
+a.btn-secondary:visited,
+.btn-secondary:link,
+.btn-secondary:visited,
+.btn-secondary,
+%btn-secondary {
+  background-color: variables.$yellow;
+  color: variables.$black;
+  border: 1px solid darken(variables.$yellow, 15%);
+
+  &:hover {
+    background-color: lighten(variables.$yellow, 15%);
+    border-color: variables.$yellow;
+  }
+}
+a.btn-secondary.menu-open {
+  background-color: variables.$black;
+  color: variables.$white;
+
+  &:link,
+  &:visited,
+  &:hover {
+    color: variables.$white;
+    background-color: lighten(variables.$black, 15%);
+  }
+}
+
+
+a.btn-tertiary,
+a.btn-tertiary:link,
+a.btn-tertiary:visited,
+.btn-tertiary,
+.btn-tertiary:link,
+.btn-tertiary:visited,
+%btn-tertiary {
+  background-color: variables.$white;
+  color: variables.$black;
+  border: 1px solid darken(variables.$white, 15%);
+
+  &:hover {
+    opacity: .8;
+    border-color: variables.$black;
+  }
+}
+
+a.btn-quaternary,
+a.btn-quaternary:link,
+a.btn-quaternary:visited,
+.btn-quaternary,
+.btn-quaternary:link,
+.btn-quaternary:visited,
+%btn-quaternary {
+  background-color: variables.$black;
+  color: variables.$white;
+  border: 1px solid lighten(variables.$black, 15%);
+  &:hover {
+    opacity: .8;
+    border-color: variables.$black;
+  }
+}
+
+a.button.btn-small,
+a.button.btn-small:link,
+a.button.btn-small:visited,
+a.btn-small,
+.btn-small,
+%btn-small {
+  font-size: 1.2rem;
+
+  padding: variables.$space-one-third variables.$space-one-half;
+
+  @include  mixins.breakpoint(lg) {
+    font-size: 1.4rem;
+  }
+}
+
+a.button.btn-x-small,
+a.button.btn-x-small:link,
+a.button.btn-x-small:visited,
+a.btn-x-small,
+.btn-x-small,
+%btn-x-small {
+  font-size: 1.2rem;
+
+  padding: variables.$space-one-third;
+
+  @include  mixins.breakpoint(lg) {
+    font-size: 1.2rem;
+  }
+}

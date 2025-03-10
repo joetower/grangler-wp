@@ -1,0 +1,39 @@
+/**
+ * @file /layouts/_author.scss
+ * Author page layouts
+ */
+@use "../config/variables";
+@use "../config/mixins";
+
+.author {
+  .page-header {
+    background-color: variables.$gray-mid-dark;
+    width: 100%;
+
+    h1 {
+      color: variables.$white;
+      text-align: center;
+    }
+  }
+  .about {
+    margin: 0 auto;
+    max-width: variables.$max-width;
+    padding: variables.$space 0;
+    clear: both;
+  }
+  .posts {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: variables.$space 0 0;
+  }
+  .post-header {
+    background-color: variables.$gray-light;
+    width: 100%;
+
+    h2 {
+      color: variables.$gray-mid-dark;
+      text-align: center;
+    }
+  }
+}

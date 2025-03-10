@@ -1,0 +1,25 @@
+/**
+ * @file /components/_blockquotes.scss
+ * Blockquotes
+ */
+@use "../config/variables";
+@use "../config/mixins";
+
+blockquote {
+  margin: variables.$space-one-half variables.$space variables.$space;
+  color: variables.$gray;
+  font-family: var(--font-family--sans);
+  font-weight: var(--font-weight--sans-bold);;
+  padding: variables.$space-one-third 0 variables.$space-one-third variables.$space-double;
+  font-style: italic;
+  max-width: variables.$max-width;
+  background-size: 34px;
+  background-position: left 50%;
+
+  cite {
+    font-size: 1.4rem;
+    display: block;
+    margin-top: variables.$space-one-half;
+    color: variables.$gray-mid;
+  }
+}

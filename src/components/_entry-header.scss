@@ -1,0 +1,12 @@
+/**
+ * @file /components/_entry-header.scss
+ * Entry Header
+ */
+ @use "../config/variables";
+ @use "../config/mixins";
+
+.entry-header {
+  .post.full & {
+    padding-top: variables.$space;
+  }
+}

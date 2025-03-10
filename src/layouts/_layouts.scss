@@ -1,0 +1,19 @@
+/**
+ * @file /layouts/_layouts.scss
+ * Include all layout-based partials here
+ */
+
+@forward "html";
+@forward "header";
+@forward "main-menu";
+@forward "footer";
+@forward "post-full";
+@forward "post-teaser";
+@forward "comments-area";
+@forward "content-bottom-widgets";
+@forward "post-navigation";
+@forward "nav-links";
+@forward "site-header-main";
+@forward "pagination";
+@forward "category";
+@forward "author";

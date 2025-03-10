@@ -1,0 +1,134 @@
+/**
+ * @file /config/_variables.scss
+ * Variables
+ */
+ 
+//
+// Typography
+//
+
+:root {
+  --font-family--sans: 'Open Sans', Arial, sans-serif;
+  --font-family--sans-condensed: 'Open Sans Condensed', Arial, sans-serif;
+  --font-weight--sans-regular: 400;
+  --font-weight--sans-semi-bold: 600;
+  --font-weight--sans-bold: 700;
+  --font-weight--sans-bolder: 800;
+  --base-font-size: 62.5%;
+}
+
+/////////
+// Colors
+
+// Primary
+
+$orange: #E06D06;
+$orange-dark: #A36E00;
+$orange-mid: #F98B29;
+$orange-light: #F9963D;
+$orange-lighter: #FCCCA1;
+$orange-lightest: #FEF1E6;
+
+$orange-ash: #E3B23C;
+$orange-ash-dark: #B28519;
+$orange-ash-mid: #DEA620;
+$orange-ash-light: #EBCA79;
+
+$yellow:#DDE000;
+
+$brown-light: #867C1C;
+$brown-lighter: #D4C534;
+$brown-lightest: #F2EEC3;
+$brown: #433E0E;
+$brown-mid-dark: #766D18;
+$brown-dark: #211F07;
+
+$cream: #DFD6A7;
+$cream-light: #EBE6CA;
+$cream-lighter: #F4F1E1;
+$cream-lightest: #F9F8F0;
+
+$red: #E94F37;
+$red-dark: #9C2311;
+
+$pink: #EE7D6B;
+$pink-dark: #EA5D47;
+
+$green: #64A300;
+$green-light:#89E000 ;
+$green-lighter:#B0FF33;
+$green-lightest:#DBFEA3;
+$green-mid-dark: #3D6600;
+$green-dark: #253D00;
+
+// Grays and Neutrals
+$gray: #393E41;
+$gray-light: #D3D6D8;
+$gray-lighter: #C3C7CA;
+$gray-lightest: #F4F4F5;
+$gray-mid:#474D51;
+$gray-mid-dark:#2A2E30;
+$gray-dark: #26292B;
+
+$white: #FFFFFF;
+$black: #000;
+
+$link: $green;
+$link-highlight: $green-lightest;
+
+/// Widths and base sizing
+$border-width: 6px;
+
+$max-width: 720px;
+$text-max-width: 600px;
+
+$max-width-image-paragraph: 860px;
+
+$teaser-width: 350px;
+$callout-width: 400px;
+
+$max-image-width: 450px;
+$max-image-width-small: 300px;
+
+$image-full-embed: 100%;
+$image-half-embed: 55%;
+
+$grid-width: 1050px;
+$grid-width-large: 1600px;
+
+/////////
+// Spacing
+//
+$space: 30px;
+
+// times
+$space-double: $space*2;
+$space-triple: $space*3;
+$space-quadruple: $space*4;
+$space-quintuple: $space*5;
+$space-sextuple: $space*6;
+$space-septuple: $space*7;
+
+// divided
+$space-one-half: $space/2;
+$space-one-third: $space/3;
+$space-one-fourth: $space/4;
+$space-one-fifth: $space/5;
+$space-one-sixth: $space/6;
+$space-one-seventh: $space/7;
+$space-one-eighth: $space/8;
+
+/////////
+// Breakpoints
+//
+
+$bp-sm:380px;
+$bp-xs:475px;
+$bp-smd:560px;
+$bp-md:768px;
+$bp-mdlg:855px;
+$bp-lg:1024px;
+$bp-xl:1260px;
+$bp-xxl:1600px;
+
+$bp-small-menu:0px;

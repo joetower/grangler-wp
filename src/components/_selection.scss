@@ -1,0 +1,17 @@
+/**
+ * @file /components/_selection.scss
+ * Selection styles
+ */
+
+@use "../config/variables";
+@use "../config/mixins";
+
+::-moz-selection {
+  background-color: variables.$yellow;
+  color: variables.$gray-dark;
+}
+
+::selection {
+  background-color: variables.$yellow;
+  color: variables.$gray-dark;
+}

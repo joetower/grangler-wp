@@ -1,0 +1,37 @@
+/**
+ * @file /layouts/_content-bottom-widgets.scss
+ * Content Bottom Widget Layout
+ */
+@use "../config/variables";
+@use "../config/mixins";
+
+
+.content-bottom-widgets {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+
+  @include mixins.breakpoint(smd) {
+    flex-direction: row;
+  }
+
+  .widget-area {
+    
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 auto;
+
+    @include mixins.breakpoint (smd) {
+      width: 50%;
+    }
+    section {
+      flex: 1 auto;
+
+      @include mixins.breakpoint (smd) {
+        width: 50%;
+      }
+    }
+  }
+}

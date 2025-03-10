@@ -1,0 +1,12 @@
+/**
+ * @file /components/_design-brief.scss
+ * Design assets: design brief
+ */
+
+@use "../config/variables";
+@use "../config/mixins";
+
+.design-brief {
+  font-size: 1.8rem;
+  padding: variables.$space 0;
+}

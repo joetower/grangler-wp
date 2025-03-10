@@ -1,0 +1,44 @@
+/**
+ * @file /components/_tables.scss
+ * Table styles
+ */
+
+@use "../config/variables";
+@use "../config/mixins";
+
+table {
+  margin: 25px 0;
+  border-collapse: collapse;
+  border: 1px solid variables.$gray-lighter;
+  border-bottom: 2px solid variables.$gray-light;
+
+  tr {
+     &:hover {
+      background: variables.$gray-lightest;
+
+      td {
+        color: variables.$gray-dark;
+      }
+    }
+  }
+  th, td {
+    color: variables.$gray-mid;
+    border: 1px solid variables.$gray-lighter;
+    border-collapse: collapse;
+    padding: variables.$space-one-fourth variables.$space-one-half;
+
+    @include mixins.breakpoint(lg) {
+      padding: variables.$space-one-half variables.$space;
+    }
+  }
+  th {
+    background: variables.$black;
+    color: variables.$white;
+    text-transform: uppercase;
+    font-size: 14px;
+
+    &.last {
+      border-right: none;
+    }
+  }
+}

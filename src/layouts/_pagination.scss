@@ -1,0 +1,32 @@
+/**
+ * @file /components/_nav-links.scss
+ * Nav Links
+ */
+@use "../config/variables";
+@use "../config/mixins";
+
+.pagination {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  .nav-links {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+  }
+  .page-numbers {
+    text-align: center;
+    flex: 1 1 auto;
+    width: 25%;
+
+    @include mixins.breakpoint(md) {
+      width: auto;
+    }
+  }
+  a {
+    text-align: center;
+  }
+}

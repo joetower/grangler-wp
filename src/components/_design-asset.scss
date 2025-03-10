@@ -1,0 +1,33 @@
+/**
+ * @file /components/_design-asset.scss
+ * Design assets: downloads
+ */
+ @use "../config/variables";
+ @use "../config/mixins";
+
+.design-asset {
+  display: inline-block;
+  margin: variables.$space 0;
+  padding: variables.$space-one-half;
+  border: variables.$border-width solid variables.$yellow;
+
+  // downloads
+  a {
+    display: block;
+    vertical-align: middle;
+    span {
+      vertical-align: middle;
+      font-weight: var(--font-weight--sans-bold);;
+    }
+  }
+  img {
+    margin: variables.$space-one-fourth;
+    width: 18px;
+    height: auto;
+  }
+  .wp-caption-text {
+    font-size: 1.4rem;
+    font-style: italic;
+    margin-top: variables.$space-one-half;
+  }
+}

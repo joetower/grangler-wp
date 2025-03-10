@@ -1,0 +1,32 @@
+/**
+ * @file /components/_figure.scss
+ * Figure
+ */
+
+@use "../config/variables";
+@use "../config/mixins";
+
+figure {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  position: relative;
+  background-color: variables.$green-light;
+
+  img {
+    width: 100%;
+    vertical-align: bottom;
+  }
+
+  + p {
+    max-width: variables.$max-width-image-paragraph;
+    margin-top: variables.$space;
+  }
+  + h2,
+  + h3,
+  + h4,
+  + h5,
+  + h6 {
+    margin-top: calc(variables.$space + variables.$space-one-half);
+  }
+}

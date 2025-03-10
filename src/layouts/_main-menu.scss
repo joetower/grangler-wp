@@ -1,0 +1,49 @@
+/**
+ * @file /layouts/_main-menu.scss
+ * Main-menu Layout
+ */
+
+@use "../config/variables";
+@use "../config/mixins";
+
+.main-menu {
+
+  ul.menu {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 0 0 auto;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    width: 100%;
+
+    @include mixins.breakpoint(lg) {
+      align-items: flex-start;
+      align-content: flex-start;
+    }
+  }
+  li {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 auto;
+    width: 25%;
+
+    @include mixins.breakpoint(md) {
+      width: 25%;
+    }
+    @include mixins.breakpoint(lg) {
+      width: auto;
+    }
+    button {
+      width: 100%;
+    }
+    a {
+      margin: 0;
+      width: auto;
+
+      @include mixins.breakpoint(lg) {
+        flex: 1 auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+/**
+ * @file /components/_with-paint.scss
+ * With Paint category posts
+ */
+ @use "../config/variables";
+ @use "../config/mixins";
+
+.painting-images {
+  margin-top: variables.$space;
+  max-width: variables.$max-width;
+}

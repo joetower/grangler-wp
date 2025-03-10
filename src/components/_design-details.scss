@@ -1,0 +1,10 @@
+/**
+ * @file /components/_design-details.scss
+ * Design assets: details
+ */
+ @use "../config/variables";
+ @use "../config/mixins";
+
+.design-details {
+  padding: variables.$space 0;
+}

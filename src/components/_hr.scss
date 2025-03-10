@@ -1,0 +1,19 @@
+/**
+ * @file /components/_hr.scss
+ * HR header row styles
+ */
+
+@use "../config/variables";
+@use "../config/mixins";
+
+hr {
+  margin: variables.$space 0;
+  border: 0;
+  height: 4px;
+  background: variables.$gray;
+  clear: both;
+
+  &.color {
+    background: variables.$green-light;
+  }
+}

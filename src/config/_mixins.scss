@@ -1,0 +1,61 @@
+/**
+ * @file /config/_mixins.scss
+ * Mixins for allthethings
+ */
+ @use "../config/variables";
+
+@mixin breakpoint($breakpoint) {
+	@if $breakpoint == xs {
+		@media (max-width: variables.$bp-xs) { @content; }
+	} @else if $breakpoint == sm {
+		@media (min-width: variables.$bp-sm) { @content; }
+	} @else if $breakpoint == smd {
+		@media (min-width: variables.$bp-smd) { @content; }
+	} @else if $breakpoint == md {
+		@media (min-width: variables.$bp-md) { @content; }
+	} @else if $breakpoint == mdlg {
+		@media (min-width: variables.$bp-lg) { @content; }
+	} @else if $breakpoint == lg {
+		@media (min-width: variables.$bp-lg) { @content; }
+	} @else if $breakpoint == xl {
+		@media (min-width: variables.$bp-xl) { @content; }
+	} @else if $breakpoint == xxl {
+		@media (min-width: variables.$bp-xxl) { @content; }
+	}@else if $breakpoint == smallMenu {
+		@media (min-width: variables.$bp-small-menu) { @content; }
+	}  else {
+		@warn "No breakpoint found for #{$breakpoint}";
+	}
+}
+
+@mixin add-grid($grid: 16) {
+	$grid: $grid;
+	$gutter: $gutter;
+	$gutter-width: $gutter * 100%;
+	$column-width: (100% - $gutter-width) / $grid;
+}
+
+@mixin add-gutter($gutter: 1/3) {
+	$gutter: $gutter;
+	$gutter-width: $gutter * 100%;
+	$column-width: (100% - $gutter-width) / $grid;
+}
+
+//////////////////////////////
+// Intrinsic Ratio
+//////////////////////////////
+
+@mixin intrinsic-ratio($ratio: 1 1, $selector: "> :first-child") {
+	$selector: unquote($selector);
+
+	padding-bottom: percentage(nth($ratio, 2) / nth($ratio, 1));
+	position: relative;
+
+	#{$selector} {
+		left: 0;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+}

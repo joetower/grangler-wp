@@ -1,0 +1,24 @@
+/**
+ * @file /components/_photo-group.scss
+ * Photo group sections
+ */
+
+@use "../config/variables";
+@use "../config/mixins";
+
+.photo-group {
+  margin-top: variables.$space-double;
+  max-width: variables.$max-width;
+
+  .photo-collection {
+    padding: variables.$space 0;
+  }
+  .photo-content {
+    padding: variables.$space;
+    background-color: variables.$cream-lighter;
+
+    + .photo-content {
+      margin-top: variables.$space-one-half;
+    }
+  }
+}

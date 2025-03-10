@@ -1,0 +1,86 @@
+/**
+ * @file /components/_main-menu.scss
+ * Main Menu styles
+ */
+
+@use "../config/variables";
+@use "../config/mixins";
+
+.main-menu {
+
+  @include mixins.breakpoint(lg) {
+    margin-top: variables.$space-one-half;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style-type: none;
+    &.hidden--large {
+      button {
+        width: 100%;
+      }
+    }
+    @include mixins.breakpoint(smallMenu) {
+      &.hidden--small {
+        display: none;
+        visibility: hidden;
+      }
+    }
+    @include mixins.breakpoint(md) {
+      &.hidden--small {
+        display: inherit;
+        visibility: visible;
+      }
+      &.hidden--medium {
+        display: none;
+        visibility: hidden;
+      }
+    }
+    @include mixins.breakpoint(lg) {
+      &.hidden--small {
+        display: inherit;
+        visibility: visible;
+      }
+      &.hidden--medium {
+        display: inherit;
+        visibility: visible;
+      }
+      &.hidden--large,
+      &.js-hidden--large {
+        display: none;
+        visibility: hidden;
+      }
+    }
+  }
+  a {
+    font-size: 1.4rem;
+
+    display: block;
+    font-weight: var(--font-weight--sans-regular);
+    background-color: variables.$green;
+    color: variables.$black;
+    text-align: center;
+    padding: variables.$space-one-third variables.$space-one-fourth;
+
+    @include mixins.breakpoint(lg) {
+      font-size: 1.6rem;
+      font-weight: var(--font-weight--sans-bold);;
+      padding: variables.$space-one-half variables.$space-one-half;
+    }
+    &:hover {
+      background-color: variables.$gray;
+      color: variables.$gray-lightest;
+    }
+    &.active,
+    &.is-active {
+      color: variables.$white;
+      background-color: variables.$gray-dark;
+      &:visited {
+        color: variables.$white;
+        background-color: variables.$gray-dark;
+      }
+    }
+  }
+}

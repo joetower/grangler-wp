@@ -1,0 +1,20 @@
+/**
+ * @file /components/_painting-details.scss
+ * Painting Details
+ */
+ @use "../config/variables";
+ @use "../config/mixins";
+
+.painting-details {
+  display: inline-block;
+  margin-top: variables.$space-one-half;
+  margin-bottom: variables.$space-one-half;
+  padding: variables.$space-one-half;
+  border: variables.$border-width solid variables.$gray-mid;
+  color: variables.$gray-mid;
+  max-width: variables.$max-width;
+
+  span {
+    display:block;
+  }
+}

@@ -1,0 +1,19 @@
+/**
+ * @file /components/_header.scss
+ * Header design
+ */
+
+@use "../config/variables";
+@use "../config/mixins";
+
+header {
+  &.site-header {
+  padding: variables.$space-one-half;
+  color: variables.$gray-mid;
+  background-color: variables.$gray-dark;
+
+    @include mixins.breakpoint(lg) {
+      padding: calc(variables.$space + variables.$space-one-half) variables.$space-one-half;
+    }
+  }
+}

@@ -1,0 +1,91 @@
+/**
+ * @file /components/_album-entries.scss
+ * Album entry posts
+ */
+
+ @use "../config/variables";
+ @use "../config/mixins";
+
+.album-entries {
+  
+  margin: 0;
+  padding: 0;
+
+  > li {
+    display: block;
+    list-style: none;
+    padding: variables.$space 0;
+
+    + li {
+      margin-top: variables.$space;
+      border-top: variables.$border-width solid variables.$gray-lightest;
+    }
+  }
+  figure {
+    margin-bottom: variables.$space;
+    z-index: 0;
+    @include mixins.breakpoint(md) {
+      float: left;
+      width: 40%;
+      margin-right: 4%;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.top-section {
+  
+  margin-bottom: variables.$space;
+  position: relative;
+}
+.album-content {
+  text-align: center;
+
+  @include mixins.breakpoint(md) {
+    display: inline-block;
+    padding: variables.$space-one-half 0;
+    float: left;
+    width: 56%;
+    text-align: left;
+  }
+}
+
+.album-position {
+  font-size: 2.8rem;
+  display: inline-block;
+  color: variables.$brown;
+  font-weight: var(--font-weight--sans-bold);
+  border-radius: 50%;
+  background-color: variables.$yellow;
+  padding: variables.$space-one-third;
+  margin-bottom: variables.$space-one-half;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+}
+.album-title {
+  margin-top: variables.$space-one-third;
+  padding-top: variables.$space-one-third;
+  border-top: variables.$border-width solid variables.$yellow;
+}
+
+.highlights {
+  margin-top: variables.$space;
+  padding: variables.$space-one-half;
+  background-color: variables.$green-lightest;
+}
+// Sections
+.honorables {
+  
+
+  margin-top: variables.$space;
+  padding-top: variables.$space;
+  border-top: variables.$border-width dotted variables.$cream;
+}
+.worst {
+  
+
+  margin-top: variables.$space;
+  padding-top: variables.$space;
+  border-top: variables.$border-width dotted variables.$cream;
+}

@@ -1,0 +1,51 @@
+/**
+ * @file /components/_nav-links.scss
+ * Nav Links
+ */
+
+@use "../config/variables";
+@use "../config/mixins";
+
+.nav-links {
+  font-size: 1.6rem;
+
+  .meta-nav {
+    padding: 0 variables.$space-one-half 0 0;
+    font-style: italic;
+    font-weight: var(--font-weight--sans-regular);
+  }
+  .dots {
+    color: variables.$white;
+  }
+  .dots,
+  .post-title {
+    font-weight: var(--font-weight--sans-bold);;
+  }
+  .dots,
+  .current,
+  a {
+    padding: variables.$space variables.$space-one-half;
+  }
+  .nav-next {
+    a,
+    a:link,
+    a:visited {
+      background-color: variables.$gray;
+      color: variables.$white;
+      &:hover {
+        background-color: variables.$black;
+      }
+    }
+  }
+  .nav-previous {
+    a,
+    a:link,
+    a:visited {
+      background-color: variables.$gray-dark;
+      color: variables.$white;
+      &:hover {
+        background-color: variables.$black;
+      }
+    }
+  }
+}

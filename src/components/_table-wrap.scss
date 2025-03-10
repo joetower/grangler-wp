@@ -1,0 +1,12 @@
+/**
+ * @file /components/_table-wrap.scss
+ * Tables should get wrapped and styled for very basic responsiveness
+ */
+ @use "../config/variables";
+ @use "../config/mixins";
+
+.table-wrap {
+  max-width: variables.$grid-width;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}

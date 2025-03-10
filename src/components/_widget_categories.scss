@@ -1,0 +1,43 @@
+/**
+ * @file /components/_widget_categories.scss
+ * Widget Categories
+ */
+
+@use "../config/variables";
+@use "../config/mixins";
+
+.widget_categories {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 auto;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+  background-color: variables.$orange-ash;
+
+  h2 {
+    display: flex;
+    color: variables.$brown;
+    flex: 1 auto;
+    width: 100%;
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-between;;
+    align-items: flex-start;
+  }
+
+  li {
+    flex: 1 auto;
+  }
+  a,
+  a:link,
+  a:visited {
+    padding: variables.$space-one-fourth;
+    border: variables.$border-width solid variables.$yellow;
+    width: 100%;
+    text-align: center;
+  }
+}

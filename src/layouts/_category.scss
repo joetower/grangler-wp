@@ -1,0 +1,22 @@
+/**
+ * @file /layouts/_category.scss
+ * Category page layouts
+ */
+@use "../config/variables";
+@use "../config/mixins";
+
+.tag,
+.category {
+  .page-header {
+    background-color: variables.$gray-mid-dark;
+    width: 100%;
+    text-align: center;
+    h1 {
+      color: variables.$white;
+      max-width: 100%;
+    }
+  }
+  .taxonomy-description {
+    color: variables.$white;
+  }
+}

@@ -1,0 +1,113 @@
+/**
+ * @file /layouts/_post-teaser.scss
+ * Post teasers layout
+ */
+@use "../config/variables";
+@use "../config/mixins";
+
+
+.post {
+
+  &.teaser.type-post {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    flex: 1 auto;
+    width: 100%;
+
+    @include mixins.breakpoint(xs) {
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: stretch;
+      align-content: stretch;
+      width: 50%;
+    }
+    @include mixins.breakpoint(md) {
+      flex: 1 auto;
+      width: 100%;
+    }
+
+    a {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items:stretch;
+      align-content: flex-start;
+      flex: 1 auto;
+      color: variables.$gray;
+      transition: all 0.25s;
+
+      @include mixins.breakpoint(xs) {
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+      }
+
+
+      &:hover {
+        background-color: variables.$green;
+        color: variables.$green-lightest;
+        img {
+          filter: saturate(0%);
+          opacity: .70;
+          transition: all 0.25s;
+        }
+        .entry-title {
+          color: variables.$green-lightest;
+        }
+      }
+    }
+    .post-thumbnail {
+      flex: 1 auto;
+      width: 100%;
+
+      @include mixins.breakpoint(xs) {
+        margin-bottom: variables.$space-one-half;
+      }
+      @include mixins.breakpoint(md) {
+        margin-bottom: 0;
+        flex: 0 0 auto;
+        width: 35%;
+      }
+      @include mixins.breakpoint(lg) {
+        width: 25%;
+      }
+      @include mixins.breakpoint(xl) {
+        width: 35%;
+      }
+      @include mixins.breakpoint(xxl) {
+        width: 45%;
+      }
+      img {
+        width: 100%;
+        vertical-align: bottom;
+      }
+    }
+
+    .teaser-content {
+      flex: 0 0 auto;
+      padding: variables.$space variables.$space variables.$space-triple;
+      width: 100%;
+
+      @include mixins.breakpoint(md) {
+        flex: 0 0 auto;
+        width: 65%;
+        align-self: center;
+        padding: variables.$space;
+      }
+      @include mixins.breakpoint(lg) {
+        width: 75%;
+      }
+      @include mixins.breakpoint(xl) {
+        width: 65%;
+      }
+      @include mixins.breakpoint(xxl) {
+        width: 55%;
+      }
+    }
+  }
+}

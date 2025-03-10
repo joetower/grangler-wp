@@ -1,0 +1,13 @@
+/**
+ * @file /layouts/_site-header-main.scss
+ * Site header main layout
+ */
+
+@use "../config/variables";
+@use "../config/mixins";
+
+
+.site-header-main {
+  margin: 0 auto;
+  max-width: variables.$grid-width;
+}

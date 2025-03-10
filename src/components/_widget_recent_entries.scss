@@ -1,0 +1,13 @@
+/**
+ * @file /components/_widget_recent_entries.scss
+ * Widget Recent Entries
+ */
+ @use "../config/variables";
+ @use "../config/mixins";
+
+.widget_recent_entries {
+  background-color: variables.$orange-ash-light;
+  h2 {
+    color: variables.$brown;
+  }
+}

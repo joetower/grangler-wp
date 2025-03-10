@@ -1,0 +1,23 @@
+/**
+ * @file /components/_comments-area.scss
+ * Comments Area Design
+ */
+@use "../config/variables";
+@use "../config/mixins";
+
+.comments-area {
+  background-color: variables.$green;
+
+  &.open {
+    background-color: variables.$black;
+    color: variables.$white;
+  }
+  .comment-respond {
+    padding: variables.$space;
+  }
+  .comment-form {
+    
+    clear: both;
+    width: 100%;
+  }
+}

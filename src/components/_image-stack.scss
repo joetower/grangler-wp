@@ -1,0 +1,17 @@
+/**
+ * @file /components/_image-stack.scss
+ * DImage stack partial
+ */
+ @use "../config/variables";
+ @use "../config/mixins";
+
+.image-stack {
+  margin: variables.$space-one-fourth 0 0;
+  padding: 0;
+  li {
+    list-style-type: none;
+    + li {
+      margin-top: variables.$space;
+    }
+  }
+}

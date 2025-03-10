@@ -1,0 +1,33 @@
+/**
+ * @file /components/_message.scss
+ * Message styles for system alerts
+ */
+ @use "../config/variables";
+ @use "../config/mixins";
+
+.message,
+.messages {
+  font-size: 1.8rem;
+  margin: variables.$space-one-half 0;
+  padding: variables.$space-one-half variables.$space-one-half variables.$space-one-half variables.$space-triple;
+  font-weight: var(--font-weight--sans-bold);;
+  background-position: 30px center;
+  background-size: 32px;
+  box-shadow: none;
+  border-radius: 0;
+
+  &.error {
+    color: variables.$white;
+    background-color: variables.$red;
+    border: variables.$border-width solid variables.$red-dark;
+  }
+  &.warning {
+    background-color: variables.$yellow;
+    border: variables.$border-width solid variables.$orange-dark;
+  }
+  &.success,
+  &.status {
+    background-color: variables.$green;
+    border: variables.$border-width solid variables.$green-dark;
+  }
+}

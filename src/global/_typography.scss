@@ -1,0 +1,195 @@
+/**
+ * @file /global/_typography.scss
+ * Typography styles
+ */
+@use "../config/variables";
+@use "../config/mixins";
+
+body,
+html {
+  font-family: var(--font-family--sans);
+  font-weight: var(--font-weight--sans-regular);
+  line-height: 1.8;
+}
+
+html {
+  font-size: var(--base-font-size);
+}
+
+body {
+  font-size: 1.8rem;
+}
+// paragraphs
+p {
+  margin: 0;
+  + p {
+    margin-top: calc(variables.$space + variables.$space-one-half);
+  }
+  + figure {
+    margin-top: variables.$space;
+  }
+  + h2,
+  + h3,
+  + h4,
+  + h5,
+  + h6 {
+    margin-top: calc(variables.$space + variables.$space-one-half);
+  }
+  + ul,
+  + ol {
+    margin-top: variables.$space-one-half;
+  }
+}
+// headings
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 variables.$space-one-third;
+  font-family: var(--font-family--sans);
+  line-height: 1.2;
+  @include  mixins.breakpoint(lg) {
+    line-height: 1.5;
+  }
+}
+
+h1 + h2,
+h2 + h3,
+h3 + h4,
+h4 + h5,
+h5 + h6 {
+  margin-top: .5em;
+  margin-bottom: 0;
+}
+h1,
+%h1 {
+  font-size: 3rem;
+  font-weight: var(--font-weight--sans-bold);
+  color:variables.$gray-dark;
+  &.post-title {
+    margin-bottom: variables.$space;
+  }
+  @include  mixins.breakpoint(lg) {
+    font-size: 4rem;
+    max-width: variables.$max-width;
+  }
+}
+h2 {
+  font-size: 2.4rem;
+
+  font-weight: var(--font-weight--sans-bold);
+  color:variables.$gray;
+  line-height: 1.2;
+
+  &.entry-title {
+    margin: 0;
+  }
+  @include mixins.breakpoint(lg) {
+    font-size: 3rem;
+    line-height: 1.5;
+  }
+
+  &.subtitle {
+    font-size: 1.8rem;
+    font-weight: var(--font-weight--sans-bold);
+
+    @include mixins.breakpoint(lg) {
+      font-size: 2rem;
+      max-width: variables.$max-width;
+    }
+  }
+  &.site-slogan {
+    font-size: 2rem;
+    font-weight: var(--font-weight--sans-bold);
+
+    @include mixins.breakpoint(lg) {
+      font-size: 2.4rem;
+    }
+  }
+}
+h3,
+%h3 {
+  font-size: 1.8rem;
+  color: variables.$brown-mid-dark;
+  font-weight: var(--font-weight--sans-bold);
+  text-transform: uppercase;
+
+  @include mixins.breakpoint(lg) {
+    font-size: 2rem;
+  }
+}
+
+h4,
+%h4 {
+  font-size: 1.6rem;
+  color:variables.$gray-mid-dark;
+
+  font-weight: var(--font-weight--sans-bold);;
+
+  @include mixins.breakpoint(lg) {
+    font-size: 1.8rem;
+  }
+}
+h5 {
+  font-size: 1.5rem;
+  font-weight: var(--font-weight--sans-regular);
+
+  @include mixins.breakpoint(lg) {
+    font-size: 1.6rem;
+  }
+}
+h6 {
+  font-size: 1.4rem;
+
+  font-weight: var(--font-weight--sans-regular);
+
+  @include mixins.breakpoint(lg) {
+    font-size: 1.5rem;
+  }
+}
+
+// emphasis styles
+strong {
+  font-weight: var(--font-weight--sans-bold);;
+}
+em {
+  font-style: italic;
+}
+
+// form elements
+
+label,
+.label {
+  font-size: 1.6rem;
+
+  font-family: var(--font-family--sans);
+  font-weight: var(--font-weight--sans-bold);;
+}
+input,
+textarea {
+  font-size: 1.6rem;
+  font-family: var(--font-family--sans);
+}
+
+table {
+  font-family: var(--font-family--sans);
+}
+
+// figure
+figcaption {
+  line-height: 1.5;
+  vertical-align: middle;
+}
+
+// quotes
+blockquote {
+  font-size: 1.6rem;
+
+  @include mixins.breakpoint(lg) {
+    font-size: 2rem;
+  }
+}
+
+// lists
+ul,
+ol {
+  font-size: 1.6rem;
+  font-family: var(--font-family--sans);
+}

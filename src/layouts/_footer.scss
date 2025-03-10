@@ -1,0 +1,59 @@
+/**
+ * @file /layouts/_footer.scss
+ * Footer Layout
+ */
+@use "../config/variables";
+@use "../config/mixins";
+
+footer {
+  &.site-footer {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-start;
+    clear: both;
+  }
+  .site-slogan {
+    flex: 1 auto;
+    align-self: center;
+    max-width: 218px;
+
+    @include mixins.breakpoint(lg) {
+      max-width: 300px;
+    }
+  }
+  .social {
+    display: flex;
+    margin: variables.$space 0 0;
+    flex: 0 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    padding: 0;
+    width: 100%;
+
+    li {
+      margin: 0;
+      flex: 0 1 auto;
+      list-style-type: none;
+    }
+    a {
+      display:block;
+      margin: 0 variables.$space-one-third;
+      background-size: contain;
+      padding-bottom: 25px;
+      width:26px;
+      height: 0;
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      opacity: 1;
+      &:hover {
+        opacity: .7;
+      }
+    }
+  }
+}

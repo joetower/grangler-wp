@@ -1,0 +1,28 @@
+/**
+ * @file /components/_social.scss
+ * Social link styles
+ */
+ @use "../config/variables";
+ @use "../config/mixins";
+
+.social {
+  margin-bottom: variables.$space-one-half;
+
+  .block-region-social {
+    background-color: variables.$gray-lightest;
+    padding: variables.$space-one-half;
+    @include mixins.breakpoint(md) {
+      display: inline-block;
+    }
+    h2 {
+      font-size: 1.4rem;
+      display: inline-block;
+      margin: 0;
+      font-weight: var(--font-weight--sans-regular);
+      vertical-align: middle;
+    }
+    .sharethis-wrapper {
+      display: inline-block;
+    }
+  }
+}

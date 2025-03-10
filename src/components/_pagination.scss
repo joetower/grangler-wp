@@ -1,0 +1,29 @@
+/**
+ * @file /components/_pagination.scss
+ * Pagination
+ */
+ @use "../config/variables";
+ @use "../config/mixins";
+
+.pagination {
+  font-size: 1.6rem;
+  font-weight: var(--font-weight--sans-bold);;
+  background-color: variables.$gray;
+
+  .current {
+    background-color: variables.$green-mid-dark;
+    color: variables.$white;
+    padding: variables.$space;
+  }
+  a,
+  a:link,
+  a:visited {
+    background-color: variables.$gray-dark;
+    color: variables.$white;
+    padding: variables.$space;
+    &:hover {
+      background-color: variables.$green-light;
+      color: variables.$green-dark;
+    }
+  }
+}
